@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="AboutUsBody" xml:space="preserve">
+    <value>Friskis &amp; Svettis is a sports club with a seemingly unique philosophy.&lt;br /&gt;There is no finish line to cross, no net to score in and no opponent to beat. Our only goal is... to put a smile on your face!</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="BecomeMember" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="BecomeMemberBody" xml:space="preserve">
+    <value>Great that you want to join.&lt;br /&gt;Visit us and we'll help you!</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Make reservation</value>
+  </data>
+  <data name="Booked" xml:space="preserve">
+    <value>Booked</value>
+  </data>
+  <data name="BookingDone" xml:space="preserve">
+    <value>You have reserved</value>
+  </data>
+  <data name="BookStandby" xml:space="preserve">
+    <value>Standby</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Call us</value>
+  </data>
+  <data name="ChooseFacility" xml:space="preserve">
+    <value>Select a facility</value>
+  </data>
+  <data name="ChooseTown" xml:space="preserve">
+    <value>Select a city</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="DoYouWantToBook" xml:space="preserve">
+    <value>Make a reservation?</value>
+  </data>
+  <data name="DoYouWantToUnbook" xml:space="preserve">
+    <value>Do you want to cancel?</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>An error occured.</value>
+  </data>
+  <data name="FacilityInfo" xml:space="preserve">
+    <value>Facility information</value>
+  </data>
+  <data name="FourZeroFour" xml:space="preserve">
+    <value>Page could not be found</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="HaveToBeLoggedInToViewSchedule" xml:space="preserve">
+    <value>You have to be logged in to view this schedule.</value>
+  </data>
+  <data name="IdeaWithoutDemand" xml:space="preserve">
+    <value>No demands or requirements</value>
+  </data>
+  <data name="LoggedInAs" xml:space="preserve">
+    <value>Logged in as</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="MyBookings" xml:space="preserve">
+    <value>My bookings</value>
+  </data>
+  <data name="MyPages" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="NewBooking" xml:space="preserve">
+    <value>New reservation / view schedule</value>
+  </data>
+  <data name="NoActivitiesCouldBeFound" xml:space="preserve">
+    <value>No activities could be found</value>
+  </data>
+  <data name="NoBookingsCouldBeFound" xml:space="preserve">
+    <value>You have no reservation</value>
+  </data>
+  <data name="NoCancelBooking" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send email</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="ShowMyBookings" xml:space="preserve">
+    <value>Show my bookings</value>
+  </data>
+  <data name="Spots" xml:space="preserve">
+    <value>Vacancies</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="Unbook" xml:space="preserve">
+    <value>Cancel reservation</value>
+  </data>
+  <data name="UnbookingDone" xml:space="preserve">
+    <value>You have canceled:</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Membership number</value>
+  </data>
+  <data name="VisitNormalWebsite" xml:space="preserve">
+    <value>Visit the regular website</value>
+  </data>
+  <data name="WrongMemberOrPassword" xml:space="preserve">
+    <value>Wrong member or password</value>
+  </data>
+  <data name="YesCancelBooking" xml:space="preserve">
+    <value>Yes, cancel this workout</value>
+  </data>
+  <data name="Standby" xml:space="preserve">
+    <value>Standby</value>
+  </data>
+  <data name="StandbyPosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="InQueue" xml:space="preserve">
+    <value>In queue</value>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Offers</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="PageTitle404" xml:space="preserve">
+    <value>The requested page could not be found</value>
+  </data>
+  <data name="PageTitleAboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="PageTitleBecomeMember" xml:space="preserve">
+    <value>Become a member</value>
+  </data>
+  <data name="PageTitleBookingDone" xml:space="preserve">
+    <value>Booking done</value>
+  </data>
+  <data name="PageTitleChooseLanguage" xml:space="preserve">
+    <value>Choose language</value>
+  </data>
+  <data name="PageTitleConfirmBooking" xml:space="preserve">
+    <value>Confirm booking</value>
+  </data>
+  <data name="PageTitleConfirmUnbooking" xml:space="preserve">
+    <value>Confirm unbooking</value>
+  </data>
+  <data name="PageTitleError" xml:space="preserve">
+    <value>An error has occured</value>
+  </data>
+  <data name="PageTitleFacilityInfo" xml:space="preserve">
+    <value>Facility information</value>
+  </data>
+  <data name="PageTitleFacilityMain" xml:space="preserve">
+    <value>Facility</value>
+  </data>
+  <data name="PageTitleLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="PageTitleMap" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="PageTitleMyBookings" xml:space="preserve">
+    <value>My bookings</value>
+  </data>
+  <data name="PageTitleSchedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="PageTitleStartpage" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="PageTitleUnbookingDone" xml:space="preserve">
+    <value>Unbooking done</value>
+  </data>
+  <data name="PageTitleNews" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="PageTitleOffers" xml:space="preserve">
+    <value>Offers</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Friskis &amp; Svettis</value>
+  </data>
+  <data name="LableScheduleActivityType" xml:space="preserve">
+    <value>Activity type</value>
+  </data>
+  <data name="LableScheduleFacility" xml:space="preserve">
+    <value>Facility</value>
+  </data>
+  <data name="LableScheduleFromDate" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="LableScheduleToDate" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="LableScheduleInstructor" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
+  <data name="LableScheduleActivity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="NoCityChoosen" xml:space="preserve">
+    <value>You have to chose a city</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Contact info</value>
+  </data>
+  <data name="OurClasses" xml:space="preserve">
+    <value>Our classes</value>
+  </data>
+  <data name="UpdateSchedule" xml:space="preserve">
+    <value>Update bookings</value>
+  </data>
+  <data name="BookingFullError" xml:space="preserve">
+    <value>The class is full</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Unknown error</value>
+  </data>
+  <data name="AddToPhoneCalendar" xml:space="preserve">
+    <value>Add to phone calendar</value>
+  </data>
+  <data name="BookingWasSuccessfull" xml:space="preserve">
+    <value>Booking done. Note that you no longer need to confirm a booking or cancellation.</value>
+  </data>
+  <data name="Dropin" xml:space="preserve">
+    <value>Dropin</value>
+  </data>
+  <data name="PageRequiresJavascript" xml:space="preserve">
+    <value>This page requires JavaScript to be enabled.</value>
+  </data>
+  <data name="UnbookingWasSuccessfull" xml:space="preserve">
+    <value>Unbooking done. Note that you no longer need to confirm a booking or cancellation.</value>
+  </data>
+  <data name="LableScheduleRoom" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+</root>

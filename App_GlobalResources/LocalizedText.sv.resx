@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Om oss</value>
+  </data>
+  <data name="AboutUsBody" xml:space="preserve">
+    <value>Friskis&amp;Svettis är en idrottsförening med ett för idrottsvärlden ovanligt mål. Här är målet ett leende.&lt;br/&gt;
+&lt;br/&gt;
+Om det är kul att träna, då vill du göra det igen. &lt;br/&gt;
+&lt;br/&gt;
+Friskis&amp;Svettis består idag av 113 föreningar i Sverige, 38 i Norge samt åtta föreningar i övriga Europa. Friskis&amp;Svettis har drygt 535 000 medlemmar.</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alla</value>
+  </data>
+  <data name="BecomeMember" xml:space="preserve">
+    <value>Bli medlem</value>
+  </data>
+  <data name="BecomeMemberBody" xml:space="preserve">
+    <value>Vad kul att du vill bli medlem! &lt;br /&gt;Besök oss gärna så hjälper vi dig.</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Boka</value>
+  </data>
+  <data name="Booked" xml:space="preserve">
+    <value>Bokat</value>
+  </data>
+  <data name="BookingDone" xml:space="preserve">
+    <value>Bokning klar</value>
+  </data>
+  <data name="BookStandby" xml:space="preserve">
+    <value>Reserv</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Ring oss</value>
+  </data>
+  <data name="ChooseFacility" xml:space="preserve">
+    <value>Välj anläggning</value>
+  </data>
+  <data name="ChooseTown" xml:space="preserve">
+    <value>Välj stad</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakta</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Gå vidare</value>
+  </data>
+  <data name="DoYouWantToBook" xml:space="preserve">
+    <value>Vill du boka?</value>
+  </data>
+  <data name="DoYouWantToUnbook" xml:space="preserve">
+    <value>Vill du avboka?</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ett oväntat fel inträffade, gå tillbaka och försök igen. Om felet består, kontakta support.</value>
+  </data>
+  <data name="FacilityInfo" xml:space="preserve">
+    <value>Anläggningsinfo</value>
+  </data>
+  <data name="FourZeroFour" xml:space="preserve">
+    <value>Sidan kunde inte hittas.</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Fullbokat</value>
+  </data>
+  <data name="HaveToBeLoggedInToViewSchedule" xml:space="preserve">
+    <value>Ni måste vara inloggad för att se detta schema.</value>
+  </data>
+  <data name="IdeaWithoutDemand" xml:space="preserve">
+    <value>Idé utan krav</value>
+  </data>
+  <data name="LoggedInAs" xml:space="preserve">
+    <value>Inloggad som</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Logga in</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logga ut</value>
+  </data>
+  <data name="MyBookings" xml:space="preserve">
+    <value>Mina bokningar</value>
+  </data>
+  <data name="MyPages" xml:space="preserve">
+    <value>Mina sidor</value>
+  </data>
+  <data name="NewBooking" xml:space="preserve">
+    <value>Ny bokning / visa schema</value>
+  </data>
+  <data name="NoActivitiesCouldBeFound" xml:space="preserve">
+    <value>Inga pass kunde hittas.</value>
+  </data>
+  <data name="NoBookingsCouldBeFound" xml:space="preserve">
+    <value>Du har inga bokningar</value>
+  </data>
+  <data name="NoCancelBooking" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Lokal</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Skicka epost</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="ShowMyBookings" xml:space="preserve">
+    <value>Visa mina bokningar</value>
+  </data>
+  <data name="Spots" xml:space="preserve">
+    <value>Platser</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Idag</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Imorgon</value>
+  </data>
+  <data name="Unbook" xml:space="preserve">
+    <value>Avboka</value>
+  </data>
+  <data name="UnbookingDone" xml:space="preserve">
+    <value>Avbokning klar</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Medlemsnummer</value>
+  </data>
+  <data name="VisitNormalWebsite" xml:space="preserve">
+    <value>Besök hemsidan</value>
+  </data>
+  <data name="WrongMemberOrPassword" xml:space="preserve">
+    <value>Felaktigt användarnamn eller lösenord.</value>
+  </data>
+  <data name="YesCancelBooking" xml:space="preserve">
+    <value>Avboka</value>
+  </data>
+  <data name="Standby" xml:space="preserve">
+    <value>Reserv</value>
+  </data>
+  <data name="StandbyPosition" xml:space="preserve">
+    <value>Reservplats</value>
+  </data>
+  <data name="InQueue" xml:space="preserve">
+    <value>Köstorlek</value>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Erbjudanden</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Aktuellt</value>
+  </data>
+  <data name="PageTitle404" xml:space="preserve">
+    <value>Sidan kunde inte hittas</value>
+  </data>
+  <data name="PageTitleAboutUs" xml:space="preserve">
+    <value>Om oss</value>
+  </data>
+  <data name="PageTitleBecomeMember" xml:space="preserve">
+    <value>Bli medlem</value>
+  </data>
+  <data name="PageTitleBookingDone" xml:space="preserve">
+    <value>Bokning klar</value>
+  </data>
+  <data name="PageTitleChooseLanguage" xml:space="preserve">
+    <value>Välj språk</value>
+  </data>
+  <data name="PageTitleConfirmBooking" xml:space="preserve">
+    <value>Bekräfta bokning</value>
+  </data>
+  <data name="PageTitleConfirmUnbooking" xml:space="preserve">
+    <value>Bekräfta avbokning</value>
+  </data>
+  <data name="PageTitleError" xml:space="preserve">
+    <value>Ett fel har uppstått</value>
+  </data>
+  <data name="PageTitleFacilityInfo" xml:space="preserve">
+    <value>Anläggningsinformation</value>
+  </data>
+  <data name="PageTitleFacilityMain" xml:space="preserve">
+    <value>Anläggning</value>
+  </data>
+  <data name="PageTitleLogin" xml:space="preserve">
+    <value>Logga in</value>
+  </data>
+  <data name="PageTitleMap" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="PageTitleMyBookings" xml:space="preserve">
+    <value>Mina bokningar</value>
+  </data>
+  <data name="PageTitleSchedule" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="PageTitleStartpage" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="PageTitleUnbookingDone" xml:space="preserve">
+    <value>Avbokning klar</value>
+  </data>
+  <data name="PageTitleNews" xml:space="preserve">
+    <value>Nyheter</value>
+  </data>
+  <data name="PageTitleOffers" xml:space="preserve">
+    <value>Erbjudanden</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Friskis &amp; Svettis</value>
+  </data>
+  <data name="LableScheduleActivityType" xml:space="preserve">
+    <value>Aktivitetstyp</value>
+  </data>
+  <data name="LableScheduleFacility" xml:space="preserve">
+    <value>Anläggning</value>
+  </data>
+  <data name="LableScheduleFromDate" xml:space="preserve">
+    <value>Från</value>
+  </data>
+  <data name="LableScheduleToDate" xml:space="preserve">
+    <value>Till</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="LableScheduleInstructor" xml:space="preserve">
+    <value>Instruktör</value>
+  </data>
+  <data name="LableScheduleActivity" xml:space="preserve">
+    <value>Aktivitet</value>
+  </data>
+  <data name="NoCityChoosen" xml:space="preserve">
+    <value>Du måste välja en stad</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Kontaktinfo</value>
+  </data>
+  <data name="OurClasses" xml:space="preserve">
+    <value>Vårt utbud</value>
+  </data>
+  <data name="UpdateSchedule" xml:space="preserve">
+    <value>Uppdatera bokningar</value>
+  </data>
+  <data name="BookingFullError" xml:space="preserve">
+    <value>Passet är fullt</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Ett oväntat fel inträffade</value>
+  </data>
+  <data name="AddToPhoneCalendar" xml:space="preserve">
+    <value>Lägg till i telefonens kalender</value>
+  </data>
+  <data name="BookingWasSuccessfull" xml:space="preserve">
+    <value>Bokning klar. Notera att man numera inte behöver bekräfta en bokning eller avbokning.</value>
+  </data>
+  <data name="Dropin" xml:space="preserve">
+    <value>Dropin</value>
+  </data>
+  <data name="PageRequiresJavascript" xml:space="preserve">
+    <value>Sidan kräver att JavaScript är aktiverat.</value>
+  </data>
+  <data name="UnbookingWasSuccessfull" xml:space="preserve">
+    <value>Avbokning klar. Notera att man numera inte behöver bekräfta en bokning eller avbokning.</value>
+  </data>
+  <data name="LableScheduleRoom" xml:space="preserve">
+    <value>Lokal</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Inställt</value>
+  </data>
+</root>

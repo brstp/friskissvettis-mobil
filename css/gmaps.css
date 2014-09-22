@@ -1,0 +1,187 @@
+﻿/* 
+    Change the following sections (could be multiple) and set 
+    the background-color and color:
+
+    .MapControlContainers       row: 143
+    .MapControlContainersSmall  row: 163
+    .mapControlsPadding         row: 172
+    .singleButton               row:  93
+
+*/
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background: #fff;
+    overflow: hidden;
+}
+
+.adp-directions {
+    /*table-layout: fixed;*/
+    /*width: 100%;*/
+    min-width: 1px;
+}
+
+div
+{
+    clear: both !important;
+    float: none !important;
+}
+#form1
+{
+    height: 100%;
+    width: 100%;
+}
+#map_canvas
+{
+    width: 100%;
+    height: 100%;
+}
+#outputDiv
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    overflow: auto;
+}
+/*INFO WINDOW*/
+.infoText
+{   
+    overflow: visible;
+    font-size: inherit;
+}
+.infoText a
+{
+    color: black;
+}
+/*SHOW*/
+.in
+{
+    position: absolute;
+    top: 0px;
+    left: 0px !important;
+}
+/*HIDE*/
+.out
+{
+    position: absolute;
+    top: 0px;
+    left: -10000px !important;
+}
+/*DIRECTIONS*/
+.inputBig
+{
+    width: 92%;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    
+    /* new */
+    padding: 6px 1px;
+    font-weight: bold;
+    color: White;
+    background-color: #82bb29; /* white; */
+    font-size: 0.8em;
+}
+
+.singleButton
+{
+    width: 100%; /*92%; */
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #ff0000; /* white; */
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+}
+.Buttons
+{
+    width: 46%;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #82bb29;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    padding: 5px;
+    font-weight: bold;
+    color: White;
+}
+/*MAP CONTROLS*/
+.mapControls /* SearchDiv, controlDiv */
+{
+    width: 36%;
+    min-height:  4%; /*18%;*/
+    padding: 5px;
+}
+.mapControlsPadding /* searchBox, searchBtn, controlText */
+{
+    background-color: #ff0000; /* white; */
+    color: white;
+    font-size: 0.8em;
+    width: 95%; /* 85% */
+    text-align: center;    
+    border: none;
+    padding: 5px;
+    
+    /* new */
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 0.8em;
+}
+.MapControlContainers /* myLocation, searchLocation */
+{
+    background-color: #ff0000; /* white; */
+    color: white;
+    border: 1px black solid;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding-top: 3px;
+    overflow:hidden;
+}
+/*SHOW DIRECTIONS BUTTON*/
+.mapControlsSmall /* directionDiv */
+{
+    width: 120px;
+    padding: 0px;
+}
+.MapControlContainersSmall /* directions */
+{
+    background-color: #ff0000; /* white; */
+    color: White;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    height:  auto; /*50px; */
+    padding:  10px 1px;
+    font-size: 0.8em;
+}
+.mapControlsPaddingSmall /* directionText */
+{
+    width: 100%; /* 10% */
+    border: none;
+    padding: 3px;
+    
+    /* new */
+    font-weight: bold;
+}
+
+/* new */
+
+#searchBox {
+    margin-top: 0px;
+}

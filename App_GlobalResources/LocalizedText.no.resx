@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Avbryt</value>
+    <comment>x</comment>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Om oss</value>
+    <comment>x</comment>
+  </data>
+  <data name="AboutUsBody" xml:space="preserve">
+    <value>Friskis&amp;Svettis er et idrettslag,med et uvanlig mål til idrett å være. Her finnes ingen målsnorer som skal brytes, ikke noe nett å sette ballen &#x3;i eller motstandere å knekke. Her er målet noe så enkelt som et smil.</value>
+    <comment>x</comment>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alle</value>
+    <comment>x</comment>
+  </data>
+  <data name="BecomeMember" xml:space="preserve">
+    <value>Bli medlem</value>
+    <comment>x</comment>
+  </data>
+  <data name="BecomeMemberBody" xml:space="preserve">
+    <value>Så morsomt at du vil bli medlem.&lt;br /&gt;Besøk oss, så hjelper vi deg!</value>
+    <comment>x</comment>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Book</value>
+    <comment>x</comment>
+  </data>
+  <data name="Booked" xml:space="preserve">
+    <value>Booket</value>
+    <comment>x</comment>
+  </data>
+  <data name="BookingDone" xml:space="preserve">
+    <value>Du har booket:</value>
+    <comment>x</comment>
+  </data>
+  <data name="BookStandby" xml:space="preserve">
+    <value>Reserve</value>
+    <comment>x</comment>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Ring oss</value>
+    <comment>x</comment>
+  </data>
+  <data name="ChooseFacility" xml:space="preserve">
+    <value>Velg anlegg</value>
+    <comment>x</comment>
+  </data>
+  <data name="ChooseTown" xml:space="preserve">
+    <value>Velg forening</value>
+    <comment>x</comment>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt</value>
+    <comment>x</comment>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Fortsett</value>
+    <comment>x</comment>
+  </data>
+  <data name="DoYouWantToBook" xml:space="preserve">
+    <value>Vil du booke plass?</value>
+    <comment>x</comment>
+  </data>
+  <data name="DoYouWantToUnbook" xml:space="preserve">
+    <value>Vil du avbestille?</value>
+    <comment>x</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>En uventet feil oppsto, gå tilbake og prøv igjen. Hvis feilen vedvarer, kontakt support.</value>
+    <comment>x</comment>
+  </data>
+  <data name="FacilityInfo" xml:space="preserve">
+    <value>Informasjon om treningslokaler</value>
+    <comment>x</comment>
+  </data>
+  <data name="FourZeroFour" xml:space="preserve">
+    <value>Side ikke funnet</value>
+    <comment>x</comment>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Fullbooket</value>
+    <comment>x</comment>
+  </data>
+  <data name="HaveToBeLoggedInToViewSchedule" xml:space="preserve">
+    <value>Du må være innlogget for å se denne planen</value>
+    <comment>x</comment>
+  </data>
+  <data name="IdeaWithoutDemand" xml:space="preserve">
+    <value>Idé uten krav</value>
+    <comment>x</comment>
+  </data>
+  <data name="LoggedInAs" xml:space="preserve">
+    <value>Logget inn som</value>
+    <comment>x</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Logg inn</value>
+    <comment>x</comment>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logg ut</value>
+    <comment>x</comment>
+  </data>
+  <data name="MyBookings" xml:space="preserve">
+    <value>Mine bookinger</value>
+    <comment>x</comment>
+  </data>
+  <data name="MyPages" xml:space="preserve">
+    <value>Til mine sider</value>
+    <comment>x</comment>
+  </data>
+  <data name="NewBooking" xml:space="preserve">
+    <value>Ny booking/vis skjema</value>
+    <comment>x</comment>
+  </data>
+  <data name="NoActivitiesCouldBeFound" xml:space="preserve">
+    <value>Ingen timer ble funnet</value>
+    <comment>x</comment>
+  </data>
+  <data name="NoBookingsCouldBeFound" xml:space="preserve">
+    <value>Du har ingen reservasjon</value>
+    <comment>x</comment>
+  </data>
+  <data name="NoCancelBooking" xml:space="preserve">
+    <value>Nei, avbryt</value>
+    <comment>x</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passord</value>
+    <comment>x</comment>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Lokale</value>
+    <comment>x</comment>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Skjema</value>
+    <comment>x</comment>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send e-post</value>
+    <comment>x</comment>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Vise</value>
+    <comment>x</comment>
+  </data>
+  <data name="ShowMyBookings" xml:space="preserve">
+    <value>Se mine bestillinger</value>
+    <comment>x</comment>
+  </data>
+  <data name="Spots" xml:space="preserve">
+    <value>Plasser</value>
+    <comment>x</comment>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>I dag</value>
+    <comment>x</comment>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>I morgen</value>
+    <comment>x</comment>
+  </data>
+  <data name="Unbook" xml:space="preserve">
+    <value>Avbestill</value>
+    <comment>x</comment>
+  </data>
+  <data name="UnbookingDone" xml:space="preserve">
+    <value>Du har avbestilt:</value>
+    <comment>x</comment>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Brukernavn</value>
+    <comment>x</comment>
+  </data>
+  <data name="VisitNormalWebsite" xml:space="preserve">
+    <value>Besøk den vanlige hjemmesiden</value>
+    <comment>x</comment>
+  </data>
+  <data name="WrongMemberOrPassword" xml:space="preserve">
+    <value>Feil brukernavn eller passord.</value>
+    <comment>x</comment>
+  </data>
+  <data name="YesCancelBooking" xml:space="preserve">
+    <value>Ja, avbestill denne treningen</value>
+    <comment>x</comment>
+  </data>
+  <data name="Standby" xml:space="preserve">
+    <value>Reserve</value>
+    <comment>x</comment>
+  </data>
+  <data name="StandbyPosition" xml:space="preserve">
+    <value>Reserve</value>
+    <comment>x</comment>
+  </data>
+  <data name="YesCancelBooking1" xml:space="preserve">
+    <value>Avboka</value>
+    <comment>x</comment>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Tilbyr</value>
+    <comment>x</comment>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Nyheter</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitle404" xml:space="preserve">
+    <value>Side ikke funnet</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleAboutUs" xml:space="preserve">
+    <value>Om oss</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleBecomeMember" xml:space="preserve">
+    <value>Registrer</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleBookingDone" xml:space="preserve">
+    <value>Reservasjon klar</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleChooseLanguage" xml:space="preserve">
+    <value>Velg språk</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleConfirmBooking" xml:space="preserve">
+    <value>Bekreft reservasjon</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleConfirmUnbooking" xml:space="preserve">
+    <value>Bekreft sletting</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleError" xml:space="preserve">
+    <value>En feil har oppstått</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleFacilityInfo" xml:space="preserve">
+    <value>Anlegget Information</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleFacilityMain" xml:space="preserve">
+    <value>Anlegget</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleLogin" xml:space="preserve">
+    <value>Logg inn</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleMap" xml:space="preserve">
+    <value>Kart</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleMyBookings" xml:space="preserve">
+    <value>Mine bookinger</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleSchedule" xml:space="preserve">
+    <value>Scheme</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleStartpage" xml:space="preserve">
+    <value>Hjem</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleUnbookingDone" xml:space="preserve">
+    <value>Avbestilling klar</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleNews" xml:space="preserve">
+    <value>Nyheter</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitleOffers" xml:space="preserve">
+    <value>Tilbyr</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Friskis &amp; Svettis</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleActivityType" xml:space="preserve">
+    <value>Aktivitet</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleFacility" xml:space="preserve">
+    <value>Treningslokale</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleFromDate" xml:space="preserve">
+    <value>Fra</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleToDate" xml:space="preserve">
+    <value>Til</value>
+    <comment>x</comment>
+  </data>
+  <data name="YesCancelBooking2" xml:space="preserve">
+    <value>Avboka</value>
+    <comment>x</comment>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Kart</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleInstructor" xml:space="preserve">
+    <value>Instruktør</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleActivity" xml:space="preserve">
+    <value>Aktivitetstype</value>
+    <comment>x</comment>
+  </data>
+  <data name="NoCityChoosen" xml:space="preserve">
+    <value>Du må velge en by</value>
+    <comment>x</comment>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Kontaktinfo</value>
+    <comment>x</comment>
+  </data>
+  <data name="OurClasses" xml:space="preserve">
+    <value>Vårt utvalg</value>
+    <comment>x</comment>
+  </data>
+  <data name="UpdateSchedule" xml:space="preserve">
+    <value>Oppdater bookinger</value>
+    <comment>x</comment>
+  </data>
+  <data name="BookingFullError" xml:space="preserve">
+    <value>Klassen er full</value>
+    <comment>x</comment>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>En uventet feil oppstod</value>
+    <comment>x</comment>
+  </data>
+  <data name="AddToPhoneCalendar" xml:space="preserve">
+    <value>Legg til telefonens kalender</value>
+    <comment>x</comment>
+  </data>
+  <data name="BookingWasSuccessfull" xml:space="preserve">
+    <value>Booking klar. Vær oppmerksom på at du ikke lenger behøver å bekrefte en booking eller avbooking.</value>
+    <comment>x</comment>
+  </data>
+  <data name="Dropin" xml:space="preserve">
+    <value>Dropin</value>
+    <comment>x</comment>
+  </data>
+  <data name="PageRequiresJavascript" xml:space="preserve">
+    <value>Denne siden krever JavaScript må være aktivert.</value>
+    <comment>x</comment>
+  </data>
+  <data name="UnbookingWasSuccessfull" xml:space="preserve">
+    <value>Komplett kansellering. Vær oppmerksom på at du ikke lenger behøver å bekrefte en booking eller avbooking.</value>
+    <comment>x</comment>
+  </data>
+  <data name="LableScheduleRoom" xml:space="preserve">
+    <value>Lokale</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Satt</value>
+  </data>
+</root>

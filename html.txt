@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+
+    
+    
+
+<meta name="viewport" content="width=320, target-densityDpi=device-dpi, initial-scale=1.0"><meta name="MobileOptimized" content="320"><meta name="HandheldFriendly" content="true"><meta http-equiv="X-UA-Compatible" content="IE=8"><link rel="stylesheet" type="text/css" href="http://localhost:33956/Schedule.aspx?mode=css" /></head>
+<body id="id1001" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+    <form method="post" action="Schedule.aspx" id="form1">
+<div class="aspNetHidden" id="id1002">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNTgzMjQ3MDQPZBYCZg9kFgICAw9kFgJmD2QWBAICDxBkDxYIZgIBAgICAwIEAgUCBgIHFggQBQtGcsOlbiBkYXR1bQUBMGcQBQwxNS8xMiAyMDExLz4FCjE1LzEyIDIwMTFnEAUMMTYvMTIgMjAxMS8+BQoxNi8xMiAyMDExZxAFDDE3LzEyIDIwMTEvPgUKMTcvMTIgMjAxMWcQBQwxOC8xMiAyMDExLz4FCjE4LzEyIDIwMTFnEAUMMTkvMTIgMjAxMS8+BQoxOS8xMiAyMDExZxAFDDIwLzEyIDIwMTEvPgUKMjAvMTIgMjAxMWcQBQwyMS8xMiAyMDExLz4FCjIxLzEyIDIwMTFnZGQCAw8QZA8WCGYCAQICAgMCBAIFAgYCBxYIEAUKVGlsbCBkYXR1bQUBMGcQBQwxNS8xMiAyMDExLz4FCjE1LzEyIDIwMTFnEAUMMTYvMTIgMjAxMS8+BQoxNi8xMiAyMDExZxAFDDE3LzEyIDIwMTEvPgUKMTcvMTIgMjAxMWcQBQwxOC8xMiAyMDExLz4FCjE4LzEyIDIwMTFnEAUMMTkvMTIgMjAxMS8+BQoxOS8xMiAyMDExZxAFDDIwLzEyIDIwMTEvPgUKMjAvMTIgMjAxMWcQBQwyMS8xMiAyMDExLz4FCjIxLzEyIDIwMTFnZGRkD90WY17t0b0Hlqom+9/DsCMGW8Vth3dHI86/FtSx1yg=">
+</div>
+
+<script type="text/javascript" id="id1003">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+        <div id="id1004">
+            <a href="/Default.aspx" alt="Startsida" id="id1005"><img id="icon-logo" alt="Friskis och Svettis" class="icon" src="http://localhost:33956/images/master/icons/logo.png?width=121&scale=both"></a><a href="#" alt="Om oss" id="id1006"><img id="icon-about" alt="Om oss" class="icon" src="http://localhost:33956/images/master/icons/about.png?width=99&scale=both"></a><a href="/Login.aspx" alt="Startsida" id="id1007"><img id="icon-login" alt="Logga in" class="icon" src="http://localhost:33956/images/master/icons/login.png?width=99&scale=both"></a> 
+            <!-- <img id="icon-logo" alt="Friskis och Svettis" class="icon" src="/images/master/icons/logo.png" /><img id="icon-about" alt="Om oss" class="icon" src="/images/master/icons/about.png" /><img id="icon-login" alt="Logga in" class="icon" src="/images/master/icons/login.png" /> -->
+        </div>
+
+        
+            <div class="container container-header" id="id1008">
+
+                <a href="#" id="btnBack" class="no-decoration">
+
+                    <img src="http://localhost:33956/images/button/back.png?width=64&scale=both" id="id1009">
+                </a>
+
+                <a href="#" id="btnHome" class="no-decoration">
+                    <img src="http://localhost:33956/images/button/home.png?width=64&scale=both" id="id1010">
+                </a>
+
+                <!-- <img class="back" src="/images/master/header/back.png" onclick="javascript:history.back()" /><img class="spacer" src="/images/master/header/spacer.png" /><img class="home" src="/images/master/header/home.png" /> -->
+            </div>
+        
+
+        <div id="id1011">
+
+            
+
+    <div class="container" id="id1012">
+
+        <h1 class="schedule" id="id1013">Schema</h1>
+
+        <div class="line" id="id1014"></div>
+
+        <div class="spacer" id="id1015">&nbsp;</div>
+        
+        <div class="schedule" id="id1016">
+
+            <select name="ctl00$ContentPlaceHolder1$drpFacility" id="ContentPlaceHolder1_drpFacility" class="first">
+
+	<option value="0" id="id1017">V&#228;lj anl&#228;ggning
+</select>
+
+            <div class="spacer" id="id1018">&nbsp;</div>
+
+            <select name="ctl00$ContentPlaceHolder1$drpWorkoutType" id="ContentPlaceHolder1_drpWorkoutType">
+	<option value="0" id="id1019">Typ av pass
+</select>
+
+            <div class="spacer" id="id1020">&nbsp;</div>
+
+            <select name="ctl00$ContentPlaceHolder1$drpFrom" id="ContentPlaceHolder1_drpFrom">
+	<option value="0" id="id1021">Fr&#229;n datum
+	<option value="15/12 2011" id="id1022">15/12 2011/&gt;
+	<option value="16/12 2011" id="id1023">16/12 2011/&gt;
+	<option value="17/12 2011" id="id1024">17/12 2011/&gt;
+	<option value="18/12 2011" id="id1025">18/12 2011/&gt;
+
+	<option value="19/12 2011" id="id1026">19/12 2011/&gt;
+	<option value="20/12 2011" id="id1027">20/12 2011/&gt;
+	<option value="21/12 2011" id="id1028">21/12 2011/&gt;
+
+</select>
+
+            <div class="spacer" id="id1029">&nbsp;</div>
+
+            <select name="ctl00$ContentPlaceHolder1$drpTo" id="ContentPlaceHolder1_drpTo">
+
+	<option value="0" id="id1030">Till datum
+	<option value="15/12 2011" id="id1031">15/12 2011/&gt;
+	<option value="16/12 2011" id="id1032">16/12 2011/&gt;
+	<option value="17/12 2011" id="id1033">17/12 2011/&gt;
+	<option value="18/12 2011" id="id1034">18/12 2011/&gt;
+	<option value="19/12 2011" id="id1035">19/12 2011/&gt;
+	<option value="20/12 2011" id="id1036">20/12 2011/&gt;
+
+	<option value="21/12 2011" id="id1037">21/12 2011/&gt;
+
+</select>
+            
+            <div class="spacer" id="id1038">&nbsp;</div>
+            <div class="line" id="id1039"></div>
+            <div class="spacer" id="id1040">&nbsp;</div>
+                
+            <a id="ContentPlaceHolder1_btnShow" class="no-decoration" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnShow&#39;,&#39;&#39;)">
+                <div class="button button-red" id="id1041">
+                    Visa
+                    <img alt="" src="http://localhost:33956/images/button/button-red-arrow.png?width=16&scale=both" id="id1042">
+
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    
+    <div class="container container-dark" id="id1043">
+
+        
+
+            <div class="container-schedule container-workout-schedule" id="id1044">
+
+                <table id="id1045">
+                    <tr id="id1046">
+                        <td valign="middle" id="id1047"><img class="difficulty" src="http://localhost:33956/images/workout/dot-easy.png?width=22&scale=both" id="id1048"></td>
+                        <td valign="middle" id="id1049"><h1 id="id1050">Step up</h1></td>
+                        <td valign="middle" id="id1051"></td>
+                    </tr>
+                    <tr id="id1052">
+                        <td id="id1053"></td>
+
+                        <td id="id1054">
+                            <div class="description" id="id1055">
+                                06/12 2011, 19:00 - 19:00 <br id="id1056">
+                                411 12, Drottninggatan 7
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="spots" id="id1057">
+                    Platser: 6 / 15
+                </div>
+            
+                
+            </div>
+
+        
+
+            <div class="container-schedule container-workout-schedule" id="id1058">
+
+                <table id="id1059">
+                    <tr id="id1060">
+                        <td valign="middle" id="id1061"><img class="difficulty" src="http://localhost:33956/images/workout/dot-medium.png?width=22&scale=both" id="id1062"></td>
+
+                        <td valign="middle" id="id1063"><h1 id="id1064">Aerobics</h1></td>
+                        <td valign="middle" id="id1065"></td>
+                    </tr>
+                    <tr id="id1066">
+                        <td id="id1067"></td>
+                        <td id="id1068">
+                            <div class="description" id="id1069">
+                                06/12 2011, 18:00 - 18:00 <br id="id1070">
+
+                                411 12, Drottninggatan 7
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="spots" id="id1071">
+                    Platser: 21 / 25
+                </div>
+            
+                
+            </div>
+
+        
+
+    </div>
+
+        
+
+        </div>
+
+        <div id="footer">
+            <a href="#" id="id1072">Besök den vanliga hemsidan</a>
+            <div id="footer-icons">
+                <img src="http://localhost:33956/images/master/footer-twitter.png?width=38&scale=both" id="id1073">
+                <img src="http://localhost:33956/images/master/footer-facebook.png?width=38&scale=both" id="id1074">
+
+            </div>
+        </div>
+
+    
+<div class="aspNetHidden" id="id1075">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFAL5hrzsBgKVmvCqBALg9dSyAQLXrJ7SAQKw84TuDQKw85DODQKw85yyDQKx8+jtCQKx89TRDgK01YiCDwK01fTmDALAo/+MCQKn/OWwBQKn/PGQBQKn/P3sBQKm/ImzAQKm/LWPBgKj2uncBwKj2pW4BAKj3qG5BfzLZc2Yh7QyojDTUluLcP8DVayvudke6Gf45PtSE8sk">
+</div></form>
+</body>
+</html>

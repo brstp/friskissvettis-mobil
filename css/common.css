@@ -1,0 +1,231 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+img {  
+    border-style: none;
+}
+
+a {
+  text-decoration: none;  
+}
+
+#form1  {
+    width: 100DW%;
+}
+
+/************************************************
+ *  CONTAINERS                                  *
+ ************************************************/
+.container  {
+    padding: 5DW%;
+} 
+
+.container-dark {
+    background-color: #262626;
+}
+
+.container-error {
+    background-color: #d07c7c;
+    color: White;
+    margin: 5DW%;
+    font-size: 4.7DW%;
+}
+
+.container-success {
+    background-color: #55AA55;
+    color: White;
+    margin: 5DW%;
+    font-size: 4.7DW%;
+}
+
+.container-loggedin {
+    background-color: #262626;
+    color: #fff;
+    font-size: 3.3DW%;
+    padding: 2.5DW% 5DW%;
+}
+
+.container-loggedin a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container-loggedin-text {
+    color: #aaa;
+}
+
+.container-loginform label {
+    color: white;
+    font-size: 5DW%;
+    margin-bottom: 3DW%;
+    display: block;
+}
+
+/************************************************
+ *  HR                                          *
+ ************************************************/
+
+.line {
+    height: 1px;
+    background-color: #cacaca;
+}
+
+/************************************************
+ *  Spacers                                     *
+ ************************************************/
+ 
+ div.spacer {
+    height: 5DW%;
+ }
+ 
+ .margin-top  {
+    margin-top: 5DW%;
+ }
+ 
+ .margin-bottom  {
+    margin-bottom: 5DW%;
+ }
+
+/************************************************
+ *  Headings                                    *
+ ************************************************/
+ 
+ h1 {
+    color: #bc2027;
+    font-size: 6DW%;
+    margin: 0;
+ }
+ 
+ h2 {
+    color: #000;
+    font-size: 5DW%;
+    margin: 0;
+ }
+
+/************************************************
+ *  Text                                        *
+ ************************************************/
+
+.text-normal {
+    font-size: 4DW%;
+}
+
+.text-gray {
+    color: #565656;
+}
+
+.text-white {
+    color: #ccc;
+}
+
+/************************************************
+ *  Buttons                                     *
+ ************************************************/
+
+.button {
+    border-radius: 2DW%;
+    padding: 2.7DW% 3DW%;
+    font-size: 4.5DW%;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.button img {
+    width: 5DW%;
+    float: right;
+}
+
+.button-red {
+    background-color: #bc2326;
+    color: #fffefd;
+    font-weight: bold;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.button-gray {
+    background-color: #ccc;
+    color: Black !important; 
+    font-weight: bold;
+}
+
+.button-arrow {
+    float: right;
+}
+
+.button-top {
+    border-radius: 2DW% 2DW% 0 0;
+}
+
+.button-bottom {
+    border-radius: 0 0 2DW% 2DW%;
+}
+
+.button-middle {
+    border-radius: 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.button-gray-half {
+    background-color: #f1f1f1;
+    color: #3a3a3a;
+    border: 1px solid #dddddd;
+    font-weight: normal;
+    padding: 6px 6px;
+    padding-top: 9px;
+    font-size: 11px;
+    width: 50%;
+    float: right;
+}
+
+.button-gray img {
+   width: 12px;
+   margin-right: 3px;
+   margin-top: 1px; 
+}
+
+/************************************************
+ *  INPUT                                       *
+ ************************************************/
+
+/* select {
+    padding: 2DW%;
+    font-size: 5DW%;
+    border: 2px solid #4c4c4c;
+} */
+
+select 
+{
+    background-color: white;
+    background: url("/images/select/background-29.png") no-repeat scroll right top white;
+    border: 2px solid #4c4c4c;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 3px;
+    /* padding-top: 6px; */ 
+    height: 33px; /*49px;*/
+    width: 100%;
+    /*width: calc(100CW% + 3px + 4px);*/ /* padding and border is not calculated in selects */ /* CONTAINER */
+    
+    /* hide arrow in select */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* use class="text" to get correct styling on input text */
+input.text {
+    padding: 5DW% 4DW%;
+    border-radius: 2DW%;
+    border: none;
+    font-size: 5DW%;
+}

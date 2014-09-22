@@ -1,0 +1,297 @@
+
+Login
+2012-03-21 15:12:15 Page: http://localhost:44587/Login.aspx, Service: Pastell, Function: C#: Login, WebService: login
+2012-03-21 15:12:15 Page: http://localhost:44587/Login.aspx, Service: Pastell, Function: C#: CachedFacility, Xml: UsualAuthenticate
+2012-03-21 15:12:16 Page: http://localhost:44587/Login.aspx, Service: Pastell, Function: C#: CachedActivities, Xml: UsualAuthenticate
+2012-03-21 15:12:17 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:12:17 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Show schedule
+2012-03-21 15:12:32 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 15:12:33 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:12:34 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+2012-03-21 15:12:34 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetGuestAuthKey, Xml: UsualAuthenticate
+2012-03-21 15:12:34 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: CachedInstructors, Xml: FetchLeaders
+
+Show schedule
+2012-03-21 15:12:44 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Show schedule
+2012-03-21 15:12:56 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Show schedule
+2012-03-21 15:13:11 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Show schedule
+2012-03-21 15:13:34 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Confirm Booking
+2012-03-21 15:13:44 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=100811110000384826&date=2012-03-23, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Booked
+2012-03-21 15:13:50 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=100811110000384826&date=2012-03-23, Service: Pastell, Function: C#: Book, WebService: book
+2012-03-21 15:13:51 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=100811110000384826&date=2012-03-23, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+Show bookings
+2012-03-21 15:14:24 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:14:25 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Confirm unbook
+2012-03-21 15:15:01 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=100811110000384826&bookid=100011110003004659&date=2012-03-23, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+Unbook
+2012-03-21 15:15:14 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=100811110000384826&bookid=100011110003004659&date=2012-03-23, Service: Pastell, Function: C#: Unbook, WebService: debook
+2012-03-21 15:15:14 Page: http://localhost:44587/loggedin/UnbookingDone.aspx?id=100811110000384826&date=2012-03-23, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Show bookings
+2012-03-21 15:15:24 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:15:24 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Show schedule
+2012-03-21 15:16:00 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 15:16:02 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+Show schedule
+2012-03-21 15:16:36 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Show schedule
+2012-03-21 15:17:05 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Confirm standby booking
+2012-03-21 15:17:22 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?m=standby&id=100411110000567831, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Standby booked
+2012-03-21 15:17:35 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?m=standby&id=100411110000567831, Service: Pastell, Function: C#: BookStandby, WebService: bookReserve
+2012-03-21 15:17:35 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=100411110000567831&date=2012-03-21, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:17:36 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=100411110000567831&date=2012-03-21, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Show bookings
+2012-03-21 15:18:08 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:18:09 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Confirm cancel standby
+2012-03-21 15:18:11 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=100411110000567831&bookid=100011110000443392&date=2012-03-23&m=standby, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:18:11 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=100411110000567831&bookid=100011110000443392&date=2012-03-23&m=standby, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Cancelled standby
+2012-03-21 15:18:38 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=100411110000567831&bookid=100011110000443392&date=2012-03-23&m=standby, Service: Pastell, Function: C#: UnbookStandby, WebService: debookReserve
+2012-03-21 15:18:39 Page: http://localhost:44587/loggedin/UnbookingDone.aspx?id=100411110000567831&date=2012-03-23, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Show bookings
+2012-03-21 15:18:53 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 15:18:53 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+=========================================================
+
+Cookie login
+2012-03-21 16:40:48 Page: http://localhost:44587/default.aspx, Service: Pastell, Function: C#: Login, WebService: login
+2012-03-21 16:40:49 Page: http://localhost:44587/default.aspx, Service: Pastell, Function: C#: CachedFacility, Xml: UsualAuthenticate
+2012-03-21 16:40:49 Page: http://localhost:44587/default.aspx, Service: Pastell, Function: C#: CachedActivities, Xml: UsualAuthenticate
+2012-03-21 16:40:50 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:40:50 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+First show schedule
+2012-03-21 16:41:11 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 16:41:18 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:41:18 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+2012-03-21 16:41:19 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetGuestAuthKey, Xml: UsualAuthenticate
+2012-03-21 16:41:19 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: CachedInstructors, Xml: FetchLeaders
+
+Reload schedule
+2012-03-21 16:41:40 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+First login on Pastell Test
+2012-03-21 16:42:16 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Pastell, Function: C#: Login, WebService: login
+2012-03-21 16:42:17 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Pastell, Function: C#: CachedFacility, Xml: UsualAuthenticate
+2012-03-21 16:42:17 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Pastell, Function: C#: CachedActivities, Xml: UsualAuthenticate
+2012-03-21 16:42:17 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:42:17 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Reload booking
+2012-03-21 16:42:34 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:42:34 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+First show schedule 
+2012-03-21 16:42:45 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 16:42:45 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:42:45 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+2012-03-21 16:42:45 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetGuestAuthKey, Xml: UsualAuthenticate
+2012-03-21 16:42:45 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: CachedInstructors, Xml: FetchLeaders
+
+Reload schedule
+2012-03-21 16:43:01 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Schedule: Changed day
+2012-03-21 16:43:22 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Confirm booking
+2012-03-21 16:43:45 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=982311110000024756&date=2012-03-22, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Booking done
+2012-03-21 16:43:59 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=982311110000024756&date=2012-03-22, Service: Pastell, Function: C#: Book, WebService: book
+2012-03-21 16:43:59 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=982311110000024756&date=2012-03-22, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+My bookings
+2012-03-21 16:44:10 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:44:11 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Confirm unbook
+2012-03-21 16:44:21 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=982311110000024756&bookid=982311110000000415&date=2012-03-22, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+Unbooked
+2012-03-21 16:44:30 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=982311110000024756&bookid=982311110000000415&date=2012-03-22, Service: Pastell, Function: C#: Unbook, WebService: debook
+2012-03-21 16:44:31 Page: http://localhost:44587/loggedin/UnbookingDone.aspx?id=982311110000024756&date=2012-03-22, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+My bookings
+2012-03-21 16:44:45 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:44:45 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Show schedule
+2012-03-21 16:45:09 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 16:45:09 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+
+Show schedule
+2012-03-21 16:45:26 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+
+Book standy item
+2012-03-21 16:45:56 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?m=standby&id=982311110000025045, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+Booked standby item
+2012-03-21 16:46:06 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?m=standby&id=982311110000025045, Service: Pastell, Function: C#: BookStandby, WebService: bookReserve
+2012-03-21 16:46:06 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=982311110000025045&date=2012-03-21, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:46:06 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=982311110000025045&date=2012-03-21, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+My bookings 
+2012-03-21 16:46:18 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:46:18 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Confirm unbook of standby booking
+2012-03-21 16:46:27 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=982311110000025045&bookid=982311110000000030&date=2012-03-22&m=standby, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:46:27 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=982311110000025045&bookid=982311110000000030&date=2012-03-22&m=standby, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Unbook done
+2012-03-21 16:46:42 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=982311110000025045&bookid=982311110000000030&date=2012-03-22&m=standby, Service: Pastell, Function: C#: UnbookStandby, WebService: debookReserve
+2012-03-21 16:46:42 Page: http://localhost:44587/loggedin/UnbookingDone.aspx?id=982311110000025045&date=2012-03-22, Service: Pastell, Function: C#: GetScheduleItem, Xml: FetchBookableObject
+
+My bookings
+2012-03-21 16:47:00 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetBookings, WebService: fetchbookings
+2012-03-21 16:47:00 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Show schedule
+2012-03-21 16:47:10 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleItems, Xml: FetchBookableObjectsFiltered
+2012-03-21 16:47:10 Page: http://localhost:44587/Schedule.aspx, Service: Pastell, Function: C#: GetScheduleStandyItems, WebService: fetchReserveBookings
+
+Defendo 
+========================================================
+
+Login 
+-------------------
+2012-03-22 09:05:28 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Defendo, Function: C#: GetSession, WebService: GetOrganisations
+2012-03-22 09:05:28 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Defendo, Function: C#: GetSession, WebService: StartSession
+2012-03-22 09:05:28 Page: http://localhost:44587/Login.aspx?facilityId=2b96af02-ec08-445c-9af0-df0c00f16570, Service: Defendo, Function: C#: Login, WebService: LoginUser
+2012-03-22 09:05:29 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Defendo, Function: C#: GetBookings, WebService: GetBookingData
+
+Schedule (initial)
+-------------------
+2012-03-22 09:05:42 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: CachedActivities, WebService: GetActivityFormsAndTypes
+2012-03-22 09:05:42 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: CachedFacility, WebService: GetLocations
+2012-03-22 09:05:42 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: CachedInstructors, WebService: GetInstructors
+2012-03-22 09:05:42 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetScheduleItems, WebService: GetSchemaWithFilter
+2012-03-22 09:05:43 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetBookItems, WebService: GetBookingData
+
+Schedule (filtered)
+-------------------
+2012-03-22 09:05:58 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetScheduleItems, WebService: GetSchemaWithFilter
+2012-03-22 09:05:58 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetBookItems, WebService: GetBookingData
+
+Book (confirm)
+-------------------
+2012-03-22 09:06:14 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&date=2012-03-23, Service: Defendo, Function: C#: GetScheduleItem, WebService: GetDatedActivityById
+
+Book (done)
+-------------------
+2012-03-22 09:06:24 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&date=2012-03-23, Service: Defendo, Function: C#: GetBookableItem, WebService: GetDatedActivityById
+2012-03-22 09:06:25 Page: http://localhost:44587/loggedin/ConfirmBooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&date=2012-03-23, Service: Defendo, Function: C#: Book, WebService: Book
+2012-03-22 09:06:25 Page: http://localhost:44587/loggedin/BookingDone.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&date=2012-03-23, Service: Defendo, Function: C#: GetBookedItem, WebService: GetDatedActivityById
+
+Bookings
+-------------------
+2012-03-22 09:06:50 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Defendo, Function: C#: GetBookings, WebService: GetBookingData
+
+Schedule 
+-------------------
+2012-03-22 09:07:23 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetScheduleItems, WebService: GetSchemaWithFilter
+2012-03-22 09:07:23 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetBookItems, WebService: GetBookingData
+
+Schedule (filtered)
+-------------------
+2012-03-22 09:07:43 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetScheduleItems, WebService: GetSchemaWithFilter
+2012-03-22 09:07:43 Page: http://localhost:44587/Schedule.aspx, Service: Defendo, Function: C#: GetBookItems, WebService: GetBookingData
+
+Bookings
+-------------------
+2012-03-22 09:08:07 Page: http://localhost:44587/loggedin/MyBookings.aspx?facilityId=9213d9ea-426e-43f5-a2e7-abe44d8760b0, Service: Defendo, Function: C#: GetBookings, WebService: GetBookingData
+
+Unbook (confirm)
+-------------------
+2012-03-22 09:08:19 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&bookid=1862b3bc-27e2-4aed-898b-42be6fd3fa85&date=2012-03-23, Service: Defendo, Function: C#: GetBookedItem, WebService: GetDatedActivityById
+
+Unbook (done)
+-------------------
+2012-03-22 09:08:31 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&bookid=1862b3bc-27e2-4aed-898b-42be6fd3fa85&date=2012-03-23, Service: Defendo, Function: C#: GetBookedItemRaw, WebService: GetDatedActivityById
+2012-03-22 09:08:32 Page: http://localhost:44587/loggedin/ConfirmUnbooking.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&bookid=1862b3bc-27e2-4aed-898b-42be6fd3fa85&date=2012-03-23, Service: Defendo, Function: C#: Unbook, WebService: CancelBooking
+2012-03-22 09:08:32 Page: http://localhost:44587/loggedin/UnbookingDone.aspx?id=9aa74443-a8dc-4276-81d1-0b6ec6dd882a&date=2012-03-23, Service: Defendo, Function: C#: GetScheduleItem, WebService: GetDatedActivityById
+
+Bookings
+-------------------
+2012-03-22 09:08:47 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: Defendo, Function: C#: GetBookings, WebService: GetBookingData2012-03-22 09:23:24 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: Login, WebService: CustomerLogin
+
+DL Software
+===============================
+
+Login
+2012-03-22 09:23:27 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: Login, WebService: GetCustomerInfo
+2012-03-22 09:23:28 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: DLSoftware, Function: C#: GetBookings, WebService: GetCustomerReservations
+
+Schedule
+2012-03-22 09:24:23 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLanguages
+2012-03-22 09:24:23 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLocationList
+2012-03-22 09:24:23 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetObjectClassList
+2012-03-22 09:24:23 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetInstructors
+2012-03-22 09:24:24 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetClasses
+
+Schedule (reload)
+2012-03-22 09:24:54 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLanguages
+2012-03-22 09:24:54 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLocationList
+2012-03-22 09:24:54 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetObjectClassList
+2012-03-22 09:24:55 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetInstructors
+2012-03-22 09:24:55 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetClasses
+
+Schedule (filter)
+2012-03-22 09:26:19 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLanguages
+2012-03-22 09:26:19 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetLocationList
+2012-03-22 09:26:20 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetObjectClassList
+2012-03-22 09:26:20 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetInstructors
+2012-03-22 09:26:20 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetClasses
+
+DL Software (refactored)
+===============================
+
+Login / -> Bookings 
+2012-03-23 13:24:47 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: Login, WebService: CustomerLogin
+2012-03-23 13:24:49 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: Login, WebService: GetCustomerInfo
+2012-03-23 13:24:49 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: CachedLanguages, WebService: GetLanguages
+2012-03-23 13:24:49 Page: http://localhost:44587/Login.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: CachedFacility, WebService: GetLocationList
+2012-03-23 13:24:50 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: DLSoftware, Function: C#: GetBookings, WebService: GetCustomerReservations
+
+Schedule
+2012-03-23 13:25:26 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: CachedActivities, WebService: GetObjectClassList
+2012-03-23 13:25:26 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: CachedInstructors, WebService: GetInstructors
+2012-03-23 13:25:26 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetClasses
+
+Schedule (filter)
+2012-03-23 13:26:01 Page: http://localhost:44587/Schedule.aspx, Service: DLSoftware, Function: C#: GetScheduleItems, WebService: GetClasses
+
+Bookings
+2012-03-23 13:26:29 Page: http://localhost:44587/loggedin/MyBookings.aspx?facilityId=ec79ea92-6881-4a9e-a904-4375c4280b5b, Service: DLSoftware, Function: C#: GetBookings, WebService: GetCustomerReservations
+2012-03-23 13:30:08 Page: http://localhost:44587/loggedin/MyBookings.aspx, Service: DLSoftware, Function: C#: GetBookings, WebService: GetCustomerReservations
