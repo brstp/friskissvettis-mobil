@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="FacilityDatas" EntityType="DatabaseModel.Store.FacilityDatas" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="FacilityDatas">
+    <Key>
+      <PropertyRef Name="LocalId" />
+    </Key>
+    <Property Name="LocalId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Id" Type="nvarchar" MaxLength="40" />
+    <Property Name="Id2" Type="nvarchar" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="HtmlInfo" Type="nvarchar" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Address" Type="nvarchar" MaxLength="400" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Visible" Type="bit" />
+    <Property Name="VisibleGuid" Type="uniqueidentifier" />
+    <Property Name="ServiceUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ServiceLicense" Type="nvarchar" MaxLength="100" />
+    <Property Name="ServiceRevision" Type="nvarchar" MaxLength="20" />
+    <Property Name="ServiceContextId" Type="nvarchar" MaxLength="100" />
+    <Property Name="ScheduleLoginNeeded" Type="bit" />
+    <Property Name="LoginId" Type="nvarchar" MaxLength="100" />
+    <Property Name="ServiceType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="Languages" Type="nvarchar" MaxLength="100" />
+    <Property Name="Homepage" Type="nvarchar" MaxLength="200" />
+    <Property Name="Twitter" Type="nvarchar" MaxLength="200" />
+    <Property Name="Facebook" Type="nvarchar" MaxLength="200" />
+    <Property Name="Zipcode" Type="nvarchar" MaxLength="200" />
+    <Property Name="News" Type="ntext" />
+    <Property Name="Offers" Type="ntext" />
+    <Property Name="About" Type="ntext" />
+    <Property Name="UsernameLabel" Type="nvarchar" MaxLength="200" />
+    <Property Name="PasswordLabel" Type="nvarchar" MaxLength="200" />
+    <Property Name="ScheduleLength" Type="int" />
+  </EntityType>
+</Schema>

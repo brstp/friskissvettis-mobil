@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FriskisSvettisLib.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FriskisSvettisLib_DLService_IDlp2wsRR_Extservice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://testweb2.dlsoftware.com/dlp2wsr_test/dlp2wsr_ext.dll/soap/IDlp2wsRR_Ext</Value>
+    </Setting>
+    <Setting Name="FriskisSvettisLib_PastellMobileService_MobileServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://riks.pastell16.pastelldata.se/v3476/MobileServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

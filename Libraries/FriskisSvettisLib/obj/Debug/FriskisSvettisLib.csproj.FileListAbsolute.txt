@@ -1,0 +1,177 @@
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll.config
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.pdb
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\MoMA.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.csprojResolveAssemblyReference.cache
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.pdb
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.OData.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.xml
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\System.Spatial.resources.dll
+Z:\TFS2\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll.config
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.pdb
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\MoMA.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.OData.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.xml
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\de\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\es\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\fr\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\it\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ja\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ko\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\ru\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\System.Spatial.resources.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.dll
+Z:\TFS\FriskisSvettis\Web\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.pdb
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll.config
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.pdb
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\MoMA.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.xml
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.csprojResolveAssemblyReference.cache
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.dll
+C:\Users\RayBanW\Desktop\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.pdb
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll.config
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\FriskisSvettisLib.pdb
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\MoMA.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.OData.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.Edm.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.Data.OData.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\Newtonsoft.Json.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.Formatting.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Net.Http.WebRequest.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Spatial.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\System.Web.Http.xml
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\de\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\es\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\it\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\de\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\es\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\fr\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\it\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ja\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ko\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\ru\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hans\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\bin\Debug\zh-Hant\System.Spatial.resources.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.csprojResolveAssemblyReference.cache
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.dll
+Z:\klasehnemark\Documents\Kunder\Friskis & Svettis\net\Friskissvettisdll\FS_latest\Libraries\FriskisSvettisLib\obj\Debug\FriskisSvettisLib.pdb

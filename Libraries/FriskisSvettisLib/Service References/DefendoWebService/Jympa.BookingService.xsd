@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Jympa.BookingService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Jympa.BookingService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="GetOrganisationsResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Organisations" nillable="true" type="tns:ArrayOfOrganisation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetOrganisationsResult" nillable="true" type="tns:GetOrganisationsResult" />
+  <xs:complexType name="ResultBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorLevel" type="tns:ErrorLevel" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultBase" nillable="true" type="tns:ResultBase" />
+  <xs:simpleType name="ErrorLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="OrganisationMissingLicense">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UserNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">110</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidOldPassword">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">120</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidEmailFormat">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">130</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidOrganisation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">140</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidCountry">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">150</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidContext">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">160</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SessionExpired">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">200</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LoginTokenExpired">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">210</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CantBook_AlreadyBooked">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">220</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CantBook_MissingDopingAgreement">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">223</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CantBook_NoSpotsLeft">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">224</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CantBook_MissedToMany">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">225</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CantCancelBooking_NotBooked">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">231</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UsernameInUse">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">240</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PersonNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">241</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WeakPassword">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">242</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TermsOfUseNotAccepted">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">243</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidLicense">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">300</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidSession">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">310</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidLoginToken">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">320</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidStartDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">340</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidEndDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">345</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InvalidDatedActivity">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">370</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CriticalServerError">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">505</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ErrorLevel" nillable="true" type="tns:ErrorLevel" />
+  <xs:complexType name="ArrayOfOrganisation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Organisation" nillable="true" type="tns:Organisation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrganisation" nillable="true" type="tns:ArrayOfOrganisation" />
+  <xs:complexType name="Organisation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Homepage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Organisation" nillable="true" type="tns:Organisation" />
+  <xs:complexType name="StartSessionResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Session" nillable="true" type="tns:Session" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StartSessionResult" nillable="true" type="tns:StartSessionResult" />
+  <xs:complexType name="Session">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element name="Key" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Session" nillable="true" type="tns:Session" />
+  <xs:complexType name="GetInstructorsResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Instructors" nillable="true" type="tns:ArrayOfInstructor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInstructorsResult" nillable="true" type="tns:GetInstructorsResult" />
+  <xs:complexType name="ArrayOfInstructor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Instructor" nillable="true" type="tns:Instructor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstructor" nillable="true" type="tns:ArrayOfInstructor" />
+  <xs:complexType name="Instructor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Instructor" nillable="true" type="tns:Instructor" />
+  <xs:complexType name="GetLocationsResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locations" nillable="true" type="tns:ArrayOfLocation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLocationsResult" nillable="true" type="tns:GetLocationsResult" />
+  <xs:complexType name="ArrayOfLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Location" nillable="true" type="tns:Location" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLocation" nillable="true" type="tns:ArrayOfLocation" />
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Location" nillable="true" type="tns:Location" />
+  <xs:complexType name="GetActivityFormsAndTypesResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivityForms" nillable="true" type="tns:ArrayOfActivityForm" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetActivityFormsAndTypesResult" nillable="true" type="tns:GetActivityFormsAndTypesResult" />
+  <xs:complexType name="ArrayOfActivityForm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActivityForm" nillable="true" type="tns:ActivityForm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActivityForm" nillable="true" type="tns:ArrayOfActivityForm" />
+  <xs:complexType name="ActivityForm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityTypes" nillable="true" type="tns:ArrayOfActivityType" />
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActivityForm" nillable="true" type="tns:ActivityForm" />
+  <xs:complexType name="ArrayOfActivityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActivityType" nillable="true" type="tns:ActivityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActivityType" nillable="true" type="tns:ArrayOfActivityType" />
+  <xs:complexType name="ActivityType">
+    <xs:sequence>
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActivityType" nillable="true" type="tns:ActivityType" />
+  <xs:complexType name="GetSchemaWithFilterResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DatedActivities" nillable="true" type="tns:ArrayOfDatedActivity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSchemaWithFilterResult" nillable="true" type="tns:GetSchemaWithFilterResult" />
+  <xs:complexType name="ArrayOfDatedActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DatedActivity" nillable="true" type="tns:DatedActivity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDatedActivity" nillable="true" type="tns:ArrayOfDatedActivity" />
+  <xs:complexType name="DatedActivity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DatedActivityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DatedActivity" nillable="true" type="tns:DatedActivity" />
+  <xs:complexType name="DatedActivityBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentBooked" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="tns:Text" />
+      <xs:element minOccurs="0" name="Ends" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Hosts" nillable="true" type="tns:Text" />
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Instructors" nillable="true" type="tns:Text" />
+      <xs:element minOccurs="0" name="IsCancelled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDropIn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsFree" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOnce" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="tns:Text" />
+      <xs:element minOccurs="0" name="MaxBookable" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxParticipants" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequiresDopingAgreement" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Starts" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DatedActivityBase" nillable="true" type="tns:DatedActivityBase" />
+  <xs:complexType name="Text">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Html" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Plain" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Text" nillable="true" type="tns:Text" />
+  <xs:complexType name="LoginToken">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="Key" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginToken" nillable="true" type="tns:LoginToken" />
+  <xs:complexType name="GetBookingDataWithFilterResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookableActivites" nillable="true" type="tns:ArrayOfBookableDatedActivity" />
+          <xs:element minOccurs="0" name="BookedActivites" nillable="true" type="tns:ArrayOfBookedDatedActivity" />
+          <xs:element minOccurs="0" name="BookingRuleDescription" nillable="true" type="tns:Text" />
+          <xs:element minOccurs="0" name="MissedBookedActivites" nillable="true" type="tns:ArrayOfMissedDatedActivity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBookingDataWithFilterResult" nillable="true" type="tns:GetBookingDataWithFilterResult" />
+  <xs:complexType name="ArrayOfBookableDatedActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookableDatedActivity" nillable="true" type="tns:BookableDatedActivity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookableDatedActivity" nillable="true" type="tns:ArrayOfBookableDatedActivity" />
+  <xs:complexType name="BookableDatedActivity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DatedActivityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookingStarts" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BookingStops" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CancelBookingStops" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CheckInEnds" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CheckInStarts" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookableDatedActivity" nillable="true" type="tns:BookableDatedActivity" />
+  <xs:complexType name="ArrayOfBookedDatedActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookedDatedActivity" nillable="true" type="tns:BookedDatedActivity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookedDatedActivity" nillable="true" type="tns:ArrayOfBookedDatedActivity" />
+  <xs:complexType name="BookedDatedActivity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BookableDatedActivity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookingId" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookedDatedActivity" nillable="true" type="tns:BookedDatedActivity" />
+  <xs:complexType name="ArrayOfMissedDatedActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MissedDatedActivity" nillable="true" type="tns:MissedDatedActivity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMissedDatedActivity" nillable="true" type="tns:ArrayOfMissedDatedActivity" />
+  <xs:complexType name="MissedDatedActivity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DatedActivityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Reason" type="tns:MissReason" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MissedDatedActivity" nillable="true" type="tns:MissedDatedActivity" />
+  <xs:simpleType name="MissReason">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotShowedUp">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CancelledTooLate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MissReason" nillable="true" type="tns:MissReason" />
+  <xs:complexType name="GetDatedActivityByIdResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookableActivity" nillable="true" type="tns:BookableDatedActivity" />
+          <xs:element minOccurs="0" name="BookedActivity" nillable="true" type="tns:BookedDatedActivity" />
+          <xs:element minOccurs="0" name="DatedActivity" nillable="true" type="tns:DatedActivity" />
+          <xs:element minOccurs="0" name="MissedBookedActivity" nillable="true" type="tns:MissedDatedActivity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDatedActivityByIdResult" nillable="true" type="tns:GetDatedActivityByIdResult" />
+  <xs:complexType name="RegisterUserResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MailSent" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RegisterUserResult" nillable="true" type="tns:RegisterUserResult" />
+  <xs:complexType name="LoginUserResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Token" nillable="true" type="tns:LoginToken" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LoginUserResult" nillable="true" type="tns:LoginUserResult" />
+  <xs:complexType name="LogoutUserResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LogoutUserResult" nillable="true" type="tns:LogoutUserResult" />
+  <xs:complexType name="ChangePasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ChangePasswordResult" nillable="true" type="tns:ChangePasswordResult" />
+  <xs:complexType name="ForgotPasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ForgotPasswordResult" nillable="true" type="tns:ForgotPasswordResult" />
+  <xs:complexType name="GetPersonInfoResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPersonInfoResult" nillable="true" type="tns:GetPersonInfoResult" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcceptsEmail" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" type="tns:Gender" />
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="PrimaryEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryEmail" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:simpleType name="Gender">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Male" />
+      <xs:enumeration value="Female" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Gender" nillable="true" type="tns:Gender" />
+  <xs:complexType name="UpdatePersonInfoResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdatePersonInfoResult" nillable="true" type="tns:UpdatePersonInfoResult" />
+  <xs:complexType name="GetSchemaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DatedActivities" nillable="true" type="tns:ArrayOfDatedActivity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSchemaResult" nillable="true" type="tns:GetSchemaResult" />
+  <xs:complexType name="GetBookingDataResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookableActivites" nillable="true" type="tns:ArrayOfBookableDatedActivity" />
+          <xs:element minOccurs="0" name="BookedActivites" nillable="true" type="tns:ArrayOfBookedDatedActivity" />
+          <xs:element minOccurs="0" name="BookingRuleDescription" nillable="true" type="tns:Text" />
+          <xs:element minOccurs="0" name="MissedBookedActivites" nillable="true" type="tns:ArrayOfMissedDatedActivity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBookingDataResult" nillable="true" type="tns:GetBookingDataResult" />
+  <xs:complexType name="BookResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookResult" nillable="true" type="tns:BookResult" />
+  <xs:complexType name="CancelBookingResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CancelBookingResult" nillable="true" type="tns:CancelBookingResult" />
+</xs:schema>

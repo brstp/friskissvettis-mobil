@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f59a5965-8034-48ce-a203-51677c72ad04" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="d57f3fc8-2d6f-4a40-bfca-bf5d8a204fdf" SourceId="1" SourceUrl="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="406fcfdd-7f4d-4158-879a-db3c40a4f026" SourceId="1" SourceUrl="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="0d61ca0c-a508-493f-a754-da93a9848b69" SourceId="1" SourceUrl="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/mex" />
+    <MetadataFile FileName="Jympa.BookingService.xsd" MetadataType="Schema" ID="b756db1c-5fc1-4ff3-9551-55340b72b446" SourceId="1" SourceUrl="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

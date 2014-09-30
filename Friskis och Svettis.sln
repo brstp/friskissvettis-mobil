@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriskisSvettisLib", "Libraries\FriskisSvettisLib\FriskisSvettisLib.csproj", "{30F71CE1-4A72-4EAF-B95D-54E1165BA3E6}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "http://localhost:1439", "{957FC857-9F43-447C-BC14-33CF76C7E211}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.PhysicalPath = "Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.VirtualPath = "/Website"
+		ProjectReferences = "{30f71ce1-4a72-4eaf-b95d-54e1165ba3e6}|FriskisSvettisLib.dll;"
+		Release.AspNetCompiler.Debug = "False"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.PhysicalPath = "Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.VirtualPath = "/Website"
+		SlnRelativePath = "Website\"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		UseIISExpress = "true"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30F71CE1-4A72-4EAF-B95D-54E1165BA3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F71CE1-4A72-4EAF-B95D-54E1165BA3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F71CE1-4A72-4EAF-B95D-54E1165BA3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F71CE1-4A72-4EAF-B95D-54E1165BA3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957FC857-9F43-447C-BC14-33CF76C7E211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957FC857-9F43-447C-BC14-33CF76C7E211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957FC857-9F43-447C-BC14-33CF76C7E211}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{957FC857-9F43-447C-BC14-33CF76C7E211}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

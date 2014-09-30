@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="urn:Dlp2wsClassesRR" name="IDlp2wsRR_Extservice" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns="urn:Dlp2wsClassesRR" targetNamespace="urn:Dlp2wsClassesRR">
+      <xs:complexType name="TRRObjectArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRObject[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRObject">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+          <xs:element name="Description" type="xs:string" />
+          <xs:element name="ClassCode" type="xs:string" />
+          <xs:element name="ClassDescription" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRSpaceArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRSpace[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRSpace">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+          <xs:element name="Description" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TLocationArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TLocation[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TLocationCode">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TLocation">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TLocationCode">
+            <xs:sequence>
+              <xs:element name="Description" type="xs:string" />
+              <xs:element name="Latitude" type="xs:double" />
+              <xs:element name="Longitude" type="xs:double" />
+              <xs:element name="Address_1" type="xs:string" />
+              <xs:element name="Address_2" type="xs:string" />
+              <xs:element name="zip" type="xs:string" />
+              <xs:element name="city" type="xs:string" />
+              <xs:element name="telephone" type="xs:string" />
+              <xs:element name="email" type="xs:string" />
+              <xs:element name="url_homepage" type="xs:string" />
+              <xs:element name="memo_text" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRInstructorArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRInstructor[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRInstructor">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+          <xs:element name="FirstName" type="xs:string" />
+          <xs:element name="LastName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRObjectCardArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRObjectCard[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRObjectCard">
+        <xs:sequence>
+          <xs:element name="Description" type="xs:string" />
+          <xs:element name="CardType" type="xs:string" />
+          <xs:element name="Obj_code" type="xs:string" />
+          <xs:element name="Expire_date" type="xs:dateTime" />
+          <xs:element name="Item_count" type="xs:int" />
+          <xs:element name="Saldo" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRObjectClassArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRObjectCLass[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRObjectCLass">
+        <xs:sequence>
+          <xs:element name="ClassCode" type="xs:string" />
+          <xs:element name="Description" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRCustomerReservationArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRCustomerReservation[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRReservation">
+        <xs:sequence>
+          <xs:element name="classID" type="xs:int" />
+          <xs:element name="obj_code" type="xs:string" />
+          <xs:element name="start_time" type="xs:dateTime" />
+          <xs:element name="end_time" type="xs:dateTime" />
+          <xs:element name="location" type="xs:string" />
+          <xs:element name="space_code" type="xs:string" />
+          <xs:element name="instructor_code" type="xs:string" />
+          <xs:element name="instructor_code2" type="xs:string" />
+          <xs:element name="instructor_name" type="xs:string" />
+          <xs:element name="instructor_name2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRCustomerReservation">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TRRReservation">
+            <xs:sequence>
+              <xs:element name="ReservationID" type="xs:int" />
+              <xs:element name="Is_cancelable" type="xs:string" />
+              <xs:element name="Queue_position" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TLocationCodeArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TLocationCode[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TObjectClassCodeArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TObjectClassCode[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TObjectClassCode">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TInstructorCodeArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TInstructorCode[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TInstructorCode">
+        <xs:sequence>
+          <xs:element name="Code" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRClassArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRClass[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRClass">
+        <xs:sequence>
+          <xs:element name="ClassID" type="xs:int" />
+          <xs:element name="Class_description" type="xs:string" />
+          <xs:element name="Special_remark" type="xs:string" />
+          <xs:element name="Location" type="xs:string" />
+          <xs:element name="Obj_code" type="xs:string" />
+          <xs:element name="Start_time" type="xs:dateTime" />
+          <xs:element name="End_time" type="xs:dateTime" />
+          <xs:element name="Space_code" type="xs:string" />
+          <xs:element name="Instructor1_name" type="xs:string" />
+          <xs:element name="Instructor2_name" type="xs:string" />
+          <xs:element name="Instructor1_code" type="xs:string" />
+          <xs:element name="Instructor2_code" type="xs:string" />
+          <xs:element name="Obj_class_code" type="xs:string" />
+          <xs:element name="Obj_class_desc" type="xs:string" />
+          <xs:element name="Allow_rsv" type="xs:string" />
+          <xs:element name="Max_rsv_qty" type="xs:int" />
+          <xs:element name="Max_web_rsv_qty" type="xs:int" />
+          <xs:element name="Reservation_qty" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TRRLanguageArray">
+        <xs:complexContent mixed="false">
+          <xs:restriction base="soapenc:Array">
+            <xs:sequence />
+            <xs:attribute xmlns:n1="http://schemas.xmlsoap.org/wsdl/" n1:arrayType="ns1:TRRLanguage[]" ref="soapenc:arrayType" />
+          </xs:restriction>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="TRRLanguage">
+        <xs:sequence>
+          <xs:element name="language_number" type="xs:int" />
+          <xs:element name="language" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="GetObjectList0Request">
+    <part name="ObjectType" type="xs:string" />
+    <part name="Language" type="xs:int" />
+    <part name="ArrObject" type="ns1:TRRObjectArray" />
+  </message>
+  <message name="GetObjectList0Response">
+    <part name="ArrObject" type="ns1:TRRObjectArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetSpaceList1Request">
+    <part name="Language" type="xs:int" />
+    <part name="ArrSpace" type="ns1:TRRSpaceArray" />
+  </message>
+  <message name="GetSpaceList1Response">
+    <part name="ArrSpace" type="ns1:TRRSpaceArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetLocationList2Request">
+    <part name="Language" type="xs:int" />
+    <part name="Arrlocation" type="ns1:TLocationArray" />
+  </message>
+  <message name="GetLocationList2Response">
+    <part name="Arrlocation" type="ns1:TLocationArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetInstructors3Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="ArrInstructor" type="ns1:TRRInstructorArray" />
+  </message>
+  <message name="GetInstructors3Response">
+    <part name="ArrInstructor" type="ns1:TRRInstructorArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="CustomerLogin4Request">
+    <part name="UserName" type="xs:string" />
+    <part name="Password" type="xs:string" />
+    <part name="SessionID" type="xs:string" />
+    <part name="Disqualified" type="xs:string" />
+  </message>
+  <message name="CustomerLogin4Response">
+    <part name="SessionID" type="xs:string" />
+    <part name="Disqualified" type="xs:string" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetCustomerInfo5Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Customercode" type="xs:string" />
+    <part name="Name" type="xs:string" />
+    <part name="Mobile" type="xs:string" />
+    <part name="Email" type="xs:string" />
+  </message>
+  <message name="GetCustomerInfo5Response">
+    <part name="Customercode" type="xs:string" />
+    <part name="Name" type="xs:string" />
+    <part name="Mobile" type="xs:string" />
+    <part name="Email" type="xs:string" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetCustomerRights6Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Contract" type="xs:string" />
+    <part name="expireDate" type="xs:dateTime" />
+    <part name="ArrObjectCard" type="ns1:TRRObjectCardArray" />
+  </message>
+  <message name="GetCustomerRights6Response">
+    <part name="Contract" type="xs:string" />
+    <part name="expireDate" type="xs:dateTime" />
+    <part name="ArrObjectCard" type="ns1:TRRObjectCardArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetObjectClassList7Request">
+    <part name="ObjectType" type="xs:string" />
+    <part name="Language" type="xs:int" />
+    <part name="ArrObjectClass" type="ns1:TRRObjectClassArray" />
+  </message>
+  <message name="GetObjectClassList7Response">
+    <part name="ArrObjectClass" type="ns1:TRRObjectClassArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetCustomerClassCode8Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="CLassCode" type="xs:string" />
+    <part name="StatusCode" type="xs:int" />
+  </message>
+  <message name="GetCustomerClassCode8Response">
+    <part name="CLassCode" type="xs:string" />
+    <part name="StatusCode" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetCustomerReservations9Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="ArrCustomerReservation" type="ns1:TRRCustomerReservationArray" />
+  </message>
+  <message name="GetCustomerReservations9Response">
+    <part name="ArrCustomerReservation" type="ns1:TRRCustomerReservationArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="CancelReservation10Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Location" type="xs:string" />
+    <part name="CLassID" type="xs:int" />
+    <part name="ReservationID" type="xs:int" />
+    <part name="ErrorStatus" type="xs:int" />
+  </message>
+  <message name="CancelReservation10Response">
+    <part name="ErrorStatus" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="MakeReservation11Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Location" type="xs:string" />
+    <part name="CLassID" type="xs:int" />
+    <part name="ReservationID" type="xs:int" />
+    <part name="ErrorStatus" type="xs:int" />
+  </message>
+  <message name="MakeReservation11Response">
+    <part name="ReservationID" type="xs:int" />
+    <part name="ErrorStatus" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="MakeRsvToQueue12Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Location" type="xs:string" />
+    <part name="CLassID" type="xs:int" />
+    <part name="ErrorStatus" type="xs:int" />
+  </message>
+  <message name="MakeRsvToQueue12Response">
+    <part name="ErrorStatus" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="CancelQueue13Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="Location" type="xs:string" />
+    <part name="CLassID" type="xs:int" />
+    <part name="ErrorStatus" type="xs:int" />
+  </message>
+  <message name="CancelQueue13Response">
+    <part name="ErrorStatus" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetClasses14Request">
+    <part name="SessionID" type="xs:string" />
+    <part name="ArrLocationCode" type="ns1:TLocationCodeArray" />
+    <part name="ArrObjClassCode" type="ns1:TObjectClassCodeArray" />
+    <part name="ArrInstructorCode" type="ns1:TInstructorCodeArray" />
+    <part name="FirstDate" type="xs:dateTime" />
+    <part name="LastDate" type="xs:dateTime" />
+    <part name="ArrClass" type="ns1:TRRClassArray" />
+  </message>
+  <message name="GetClasses14Response">
+    <part name="ArrClass" type="ns1:TRRClassArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetTimeZoneInfo15Request">
+    <part name="Bias_minutes" type="xs:int" />
+  </message>
+  <message name="GetTimeZoneInfo15Response">
+    <part name="Bias_minutes" type="xs:int" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetLanguages16Request">
+    <part name="ArrLanguage" type="ns1:TRRLanguageArray" />
+  </message>
+  <message name="GetLanguages16Response">
+    <part name="ArrLanguage" type="ns1:TRRLanguageArray" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="GetWebText17Request">
+    <part name="Code" type="xs:string" />
+    <part name="Language" type="xs:int" />
+    <part name="text" type="xs:string" />
+  </message>
+  <message name="GetWebText17Response">
+    <part name="text" type="xs:string" />
+    <part name="return" type="xs:boolean" />
+  </message>
+  <message name="Dummy18Request">
+    <part name="d1" type="ns1:TRRReservation" />
+    <part name="foo" type="xs:string" />
+  </message>
+  <message name="Dummy18Response">
+    <part name="return" type="xs:boolean" />
+  </message>
+  <portType name="IDlp2wsRR_Ext">
+    <operation name="GetObjectList">
+      <input message="tns:GetObjectList0Request" />
+      <output message="tns:GetObjectList0Response" />
+    </operation>
+    <operation name="GetSpaceList">
+      <input message="tns:GetSpaceList1Request" />
+      <output message="tns:GetSpaceList1Response" />
+    </operation>
+    <operation name="GetLocationList">
+      <input message="tns:GetLocationList2Request" />
+      <output message="tns:GetLocationList2Response" />
+    </operation>
+    <operation name="GetInstructors">
+      <input message="tns:GetInstructors3Request" />
+      <output message="tns:GetInstructors3Response" />
+    </operation>
+    <operation name="CustomerLogin">
+      <input message="tns:CustomerLogin4Request" />
+      <output message="tns:CustomerLogin4Response" />
+    </operation>
+    <operation name="GetCustomerInfo">
+      <input message="tns:GetCustomerInfo5Request" />
+      <output message="tns:GetCustomerInfo5Response" />
+    </operation>
+    <operation name="GetCustomerRights">
+      <input message="tns:GetCustomerRights6Request" />
+      <output message="tns:GetCustomerRights6Response" />
+    </operation>
+    <operation name="GetObjectClassList">
+      <input message="tns:GetObjectClassList7Request" />
+      <output message="tns:GetObjectClassList7Response" />
+    </operation>
+    <operation name="GetCustomerClassCode">
+      <input message="tns:GetCustomerClassCode8Request" />
+      <output message="tns:GetCustomerClassCode8Response" />
+    </operation>
+    <operation name="GetCustomerReservations">
+      <input message="tns:GetCustomerReservations9Request" />
+      <output message="tns:GetCustomerReservations9Response" />
+    </operation>
+    <operation name="CancelReservation">
+      <input message="tns:CancelReservation10Request" />
+      <output message="tns:CancelReservation10Response" />
+    </operation>
+    <operation name="MakeReservation">
+      <input message="tns:MakeReservation11Request" />
+      <output message="tns:MakeReservation11Response" />
+    </operation>
+    <operation name="MakeRsvToQueue">
+      <input message="tns:MakeRsvToQueue12Request" />
+      <output message="tns:MakeRsvToQueue12Response" />
+    </operation>
+    <operation name="CancelQueue">
+      <input message="tns:CancelQueue13Request" />
+      <output message="tns:CancelQueue13Response" />
+    </operation>
+    <operation name="GetClasses">
+      <input message="tns:GetClasses14Request" />
+      <output message="tns:GetClasses14Response" />
+    </operation>
+    <operation name="GetTimeZoneInfo">
+      <input message="tns:GetTimeZoneInfo15Request" />
+      <output message="tns:GetTimeZoneInfo15Response" />
+    </operation>
+    <operation name="GetLanguages">
+      <input message="tns:GetLanguages16Request" />
+      <output message="tns:GetLanguages16Response" />
+    </operation>
+    <operation name="GetWebText">
+      <input message="tns:GetWebText17Request" />
+      <output message="tns:GetWebText17Response" />
+    </operation>
+    <operation name="Dummy">
+      <input message="tns:Dummy18Request" />
+      <output message="tns:Dummy18Response" />
+    </operation>
+  </portType>
+  <binding name="IDlp2wsRR_Extbinding" type="tns:IDlp2wsRR_Ext">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="GetObjectList">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetObjectList" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetSpaceList">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetSpaceList" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetLocationList">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetLocationList" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetInstructors">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetInstructors" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="CustomerLogin">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#CustomerLogin" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetCustomerInfo">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetCustomerInfo" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetCustomerRights">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetCustomerRights" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetObjectClassList">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetObjectClassList" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetCustomerClassCode">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetCustomerClassCode" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetCustomerReservations">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetCustomerReservations" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="CancelReservation">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#CancelReservation" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="MakeReservation">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#MakeReservation" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="MakeRsvToQueue">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#MakeRsvToQueue" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="CancelQueue">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#CancelQueue" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetClasses">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetClasses" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetTimeZoneInfo">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetTimeZoneInfo" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetLanguages">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetLanguages" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetWebText">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#GetWebText" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="Dummy">
+      <soap:operation soapAction="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext#Dummy" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:Dlp2wsIntfRR_Ext-IDlp2wsRR_Ext" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="IDlp2wsRR_Extservice">
+    <port name="IDlp2wsRR_ExtPort" binding="tns:IDlp2wsRR_Extbinding">
+      <soap:address location="http://testweb2.dlsoftware.com/dlp2wsr_test/dlp2wsr_ext.dll/soap/IDlp2wsRR_Ext" />
+    </port>
+  </service>
+</definitions>

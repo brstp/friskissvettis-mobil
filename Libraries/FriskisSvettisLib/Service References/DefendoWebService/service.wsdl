@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BookingService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="binaryHttp_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Jympa.BookingService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBookingService_GetOrganisations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisations" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetOrganisations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_StartSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartSession" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_StartSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetInstructors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructors" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetInstructors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocations" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetActivityFormsAndTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityFormsAndTypes" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetActivityFormsAndTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityFormsAndTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetSchemaWithFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchemaWithFilter" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetSchemaWithFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchemaWithFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetBookingDataWithFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingDataWithFilter" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetBookingDataWithFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingDataWithFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetDatedActivityById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatedActivityById" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetDatedActivityById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatedActivityByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_LoginUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginUser" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_LoginUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_LogoutUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutUser" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_LogoutUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_ChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_ChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_ForgotPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForgotPassword" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_ForgotPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetPersonInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonInfo" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetPersonInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_UpdatePersonInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonInfo" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_UpdatePersonInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetSchema_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchema" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetSchema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetBookingData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingData" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_GetBookingData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_Book_InputMessage">
+    <wsdl:part name="parameters" element="tns:Book" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_Book_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_CancelBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelBooking" />
+  </wsdl:message>
+  <wsdl:message name="IBookingService_CancelBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelBookingResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IBookingService">
+    <wsdl:operation name="GetOrganisations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetOrganisations" message="tns:IBookingService_GetOrganisations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetOrganisationsResponse" message="tns:IBookingService_GetOrganisations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/StartSession" message="tns:IBookingService_StartSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/StartSessionResponse" message="tns:IBookingService_StartSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetInstructors" message="tns:IBookingService_GetInstructors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetInstructorsResponse" message="tns:IBookingService_GetInstructors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetLocations" message="tns:IBookingService_GetLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetLocationsResponse" message="tns:IBookingService_GetLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityFormsAndTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetActivityFormsAndTypes" message="tns:IBookingService_GetActivityFormsAndTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetActivityFormsAndTypesResponse" message="tns:IBookingService_GetActivityFormsAndTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaWithFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetSchemaWithFilter" message="tns:IBookingService_GetSchemaWithFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetSchemaWithFilterResponse" message="tns:IBookingService_GetSchemaWithFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingDataWithFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetBookingDataWithFilter" message="tns:IBookingService_GetBookingDataWithFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetBookingDataWithFilterResponse" message="tns:IBookingService_GetBookingDataWithFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatedActivityById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetDatedActivityById" message="tns:IBookingService_GetDatedActivityById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetDatedActivityByIdResponse" message="tns:IBookingService_GetDatedActivityById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/RegisterUser" message="tns:IBookingService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/RegisterUserResponse" message="tns:IBookingService_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/LoginUser" message="tns:IBookingService_LoginUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/LoginUserResponse" message="tns:IBookingService_LoginUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LogoutUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/LogoutUser" message="tns:IBookingService_LogoutUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/LogoutUserResponse" message="tns:IBookingService_LogoutUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/ChangePassword" message="tns:IBookingService_ChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/ChangePasswordResponse" message="tns:IBookingService_ChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/ForgotPassword" message="tns:IBookingService_ForgotPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/ForgotPasswordResponse" message="tns:IBookingService_ForgotPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetPersonInfo" message="tns:IBookingService_GetPersonInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetPersonInfoResponse" message="tns:IBookingService_GetPersonInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/UpdatePersonInfo" message="tns:IBookingService_UpdatePersonInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/UpdatePersonInfoResponse" message="tns:IBookingService_UpdatePersonInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchema">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetSchema" message="tns:IBookingService_GetSchema_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetSchemaResponse" message="tns:IBookingService_GetSchema_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/GetBookingData" message="tns:IBookingService_GetBookingData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/GetBookingDataResponse" message="tns:IBookingService_GetBookingData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Book">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/Book" message="tns:IBookingService_Book_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/BookResponse" message="tns:IBookingService_Book_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookingService/CancelBooking" message="tns:IBookingService_CancelBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookingService/CancelBookingResponse" message="tns:IBookingService_CancelBooking_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="basicHttpBinding" type="tns:IBookingService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOrganisations">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetOrganisations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartSession">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/StartSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructors">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetInstructors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocations">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityFormsAndTypes">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetActivityFormsAndTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaWithFilter">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetSchemaWithFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingDataWithFilter">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetBookingDataWithFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatedActivityById">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetDatedActivityById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUser">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/LoginUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogoutUser">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/LogoutUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetPersonInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonInfo">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/UpdatePersonInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchema">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingData">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/GetBookingData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Book">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/Book" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <soap:operation soapAction="http://tempuri.org/IBookingService/CancelBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="binaryHttp" type="tns:IBookingService">
+    <wsp:PolicyReference URI="#binaryHttp_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOrganisations">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetOrganisations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartSession">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/StartSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructors">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetInstructors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocations">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityFormsAndTypes">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetActivityFormsAndTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaWithFilter">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetSchemaWithFilter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingDataWithFilter">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetBookingDataWithFilter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatedActivityById">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetDatedActivityById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUser">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/LoginUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogoutUser">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/LogoutUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetPersonInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonInfo">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/UpdatePersonInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchema">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingData">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/GetBookingData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Book">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/Book" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <soap12:operation soapAction="http://tempuri.org/IBookingService/CancelBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookingService">
+    <wsdl:port name="basicHttpBinding" binding="tns:basicHttpBinding">
+      <soap:address location="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/BasicHttp" />
+    </wsdl:port>
+    <wsdl:port name="binaryHttp" binding="tns:binaryHttp">
+      <soap12:address location="http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/binaryHttp" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://bookingservice.jympa.nu/MobileAppService/Jympa.BookingService.BookingService.svc/binaryHttp</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

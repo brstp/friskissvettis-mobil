@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="FacilityDatas">
+      <EntityTypeMapping TypeName="DatabaseModel.FacilityData">
+        <MappingFragment StoreEntitySet="FacilityDatas">
+          <ScalarProperty Name="LocalId" ColumnName="LocalId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Id2" ColumnName="Id2" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="HtmlInfo" ColumnName="HtmlInfo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="VisibleGuid" ColumnName="VisibleGuid" />
+          <ScalarProperty Name="ServiceUrl" ColumnName="ServiceUrl" />
+          <ScalarProperty Name="ServiceLicense" ColumnName="ServiceLicense" />
+          <ScalarProperty Name="ServiceRevision" ColumnName="ServiceRevision" />
+          <ScalarProperty Name="ServiceContextId" ColumnName="ServiceContextId" />
+          <ScalarProperty Name="ScheduleLoginNeeded" ColumnName="ScheduleLoginNeeded" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="Homepage" ColumnName="Homepage" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="News" ColumnName="News" />
+          <ScalarProperty Name="Offers" ColumnName="Offers" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="UsernameLabel" ColumnName="UsernameLabel" />
+          <ScalarProperty Name="PasswordLabel" ColumnName="PasswordLabel" />
+          <ScalarProperty Name="ScheduleLength" ColumnName="ScheduleLength" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

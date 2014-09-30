@@ -1,7 +1,0 @@
-﻿input.login, input.abort {
-    width: calc(100DW% - 10DW% - 8DW%)px; /* width - padding - margin */
-}
-
-.button-login, input.login {
-    margin-bottom: 5DW%;
-}

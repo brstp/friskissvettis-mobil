@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Jympa.BookingService" />
+  <xs:element name="GetOrganisations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="contextId" type="q1:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetOrganisationsResult" nillable="true" type="q2:GetOrganisationsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="license" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="organisation" nillable="true" type="q3:Organisation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="StartSessionResult" nillable="true" type="q4:StartSessionResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstructors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q5:Session" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstructorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetInstructorsResult" nillable="true" type="q6:GetInstructorsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q7:Session" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetLocationsResult" nillable="true" type="q8:GetLocationsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivityFormsAndTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q9:Session" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivityFormsAndTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetActivityFormsAndTypesResult" nillable="true" type="q10:GetActivityFormsAndTypesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchemaWithFilter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q11:Session" />
+        <xs:element minOccurs="0" name="start" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="end" type="xs:dateTime" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="location" nillable="true" type="q12:Location" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="activityForm" nillable="true" type="q13:ActivityForm" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="activityType" nillable="true" type="q14:ActivityType" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="instructor" nillable="true" type="q15:Instructor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchemaWithFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetSchemaWithFilterResult" nillable="true" type="q16:GetSchemaWithFilterResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingDataWithFilter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q17:Session" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q18:LoginToken" />
+        <xs:element minOccurs="0" name="start" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="end" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="location" nillable="true" type="q19:Location" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="activityForm" nillable="true" type="q20:ActivityForm" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="activityType" nillable="true" type="q21:ActivityType" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="instructor" nillable="true" type="q22:Instructor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingDataWithFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetBookingDataWithFilterResult" nillable="true" type="q23:GetBookingDataWithFilterResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatedActivityById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q24:Session" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q25:LoginToken" />
+        <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q26:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatedActivityByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetDatedActivityByIdResult" nillable="true" type="q27:GetDatedActivityByIdResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q28:Session" />
+        <xs:element minOccurs="0" name="memberNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="RegisterUserResult" nillable="true" type="q29:RegisterUserResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q30:Session" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="LoginUserResult" nillable="true" type="q31:LoginUserResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogoutUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q32:Session" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q33:LoginToken" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogoutUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="LogoutUserResult" nillable="true" type="q34:LogoutUserResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q35:Session" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q36:LoginToken" />
+        <xs:element minOccurs="0" name="oldPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="ChangePasswordResult" nillable="true" type="q37:ChangePasswordResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgotPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q38:Session" />
+        <xs:element minOccurs="0" name="identifier" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgotPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="ForgotPasswordResult" nillable="true" type="q39:ForgotPasswordResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q40:Session" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q41:LoginToken" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetPersonInfoResult" nillable="true" type="q42:GetPersonInfoResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePersonInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q43:Session" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q44:LoginToken" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="gender" type="q45:Gender" />
+        <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="primaryEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="secondaryEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="acceptsEmail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePersonInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="UpdatePersonInfoResult" nillable="true" type="q46:UpdatePersonInfoResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q47:Session" />
+        <xs:element minOccurs="0" name="start" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="end" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetSchemaResult" nillable="true" type="q48:GetSchemaResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q49:Session" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q50:LoginToken" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="GetBookingDataResult" nillable="true" type="q51:GetBookingDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q52:Session" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q53:LoginToken" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="datedActivity" nillable="true" type="q54:BookableDatedActivity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="BookResult" nillable="true" type="q55:BookResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelBooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="session" nillable="true" type="q56:Session" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="token" nillable="true" type="q57:LoginToken" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="datedActivity" nillable="true" type="q58:BookedDatedActivity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Jympa.BookingService" minOccurs="0" name="CancelBookingResult" nillable="true" type="q59:CancelBookingResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

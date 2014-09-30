@@ -1,0 +1,1 @@
+﻿document.getElementById('{id}').src += '&markers=' + '{icon}' + p.coords.latitude + ',' + p.coords.longitude;

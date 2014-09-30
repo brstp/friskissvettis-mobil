@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="version">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="versionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="versionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="process">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="processResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="processResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="processUnsafe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="processUnsafeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="processUnsafeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="globalunit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookReserve">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="boid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookReserveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookReserveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="debookReserve">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reservbid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="debookReserveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="debookReserveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="book">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="boid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="debook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="debookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="debookResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchbookings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchbookingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchbookingsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchReserveBookings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="revision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchReserveBookingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchReserveBookingsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="selecteddate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchBOSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchBOSPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSGid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="selecteddate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="globalunit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSGidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchBOSGidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSGidPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="selecteddate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="globalunit" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fetchBOSGidPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fetchBOSGidPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="versionSoapIn">
+    <wsdl:part name="parameters" element="tns:version" />
+  </wsdl:message>
+  <wsdl:message name="versionSoapOut">
+    <wsdl:part name="parameters" element="tns:versionResponse" />
+  </wsdl:message>
+  <wsdl:message name="processSoapIn">
+    <wsdl:part name="parameters" element="tns:process" />
+  </wsdl:message>
+  <wsdl:message name="processSoapOut">
+    <wsdl:part name="parameters" element="tns:processResponse" />
+  </wsdl:message>
+  <wsdl:message name="processUnsafeSoapIn">
+    <wsdl:part name="parameters" element="tns:processUnsafe" />
+  </wsdl:message>
+  <wsdl:message name="processUnsafeSoapOut">
+    <wsdl:part name="parameters" element="tns:processUnsafeResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginSoapIn">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="loginSoapOut">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookReserveSoapIn">
+    <wsdl:part name="parameters" element="tns:bookReserve" />
+  </wsdl:message>
+  <wsdl:message name="bookReserveSoapOut">
+    <wsdl:part name="parameters" element="tns:bookReserveResponse" />
+  </wsdl:message>
+  <wsdl:message name="debookReserveSoapIn">
+    <wsdl:part name="parameters" element="tns:debookReserve" />
+  </wsdl:message>
+  <wsdl:message name="debookReserveSoapOut">
+    <wsdl:part name="parameters" element="tns:debookReserveResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookSoapIn">
+    <wsdl:part name="parameters" element="tns:book" />
+  </wsdl:message>
+  <wsdl:message name="bookSoapOut">
+    <wsdl:part name="parameters" element="tns:bookResponse" />
+  </wsdl:message>
+  <wsdl:message name="debookSoapIn">
+    <wsdl:part name="parameters" element="tns:debook" />
+  </wsdl:message>
+  <wsdl:message name="debookSoapOut">
+    <wsdl:part name="parameters" element="tns:debookResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchbookingsSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchbookings" />
+  </wsdl:message>
+  <wsdl:message name="fetchbookingsSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchbookingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchReserveBookingsSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchReserveBookings" />
+  </wsdl:message>
+  <wsdl:message name="fetchReserveBookingsSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchReserveBookingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchBOS" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchBOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSPageSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchBOSPage" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSPageSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchBOSPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSGidSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchBOSGid" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSGidSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchBOSGidResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSGidPageSoapIn">
+    <wsdl:part name="parameters" element="tns:fetchBOSGidPage" />
+  </wsdl:message>
+  <wsdl:message name="fetchBOSGidPageSoapOut">
+    <wsdl:part name="parameters" element="tns:fetchBOSGidPageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MobileServicesSoap">
+    <wsdl:operation name="version">
+      <wsdl:input message="tns:versionSoapIn" />
+      <wsdl:output message="tns:versionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="process">
+      <wsdl:input message="tns:processSoapIn" />
+      <wsdl:output message="tns:processSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="processUnsafe">
+      <wsdl:input message="tns:processUnsafeSoapIn" />
+      <wsdl:output message="tns:processUnsafeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input message="tns:loginSoapIn" />
+      <wsdl:output message="tns:loginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookReserve">
+      <wsdl:input message="tns:bookReserveSoapIn" />
+      <wsdl:output message="tns:bookReserveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="debookReserve">
+      <wsdl:input message="tns:debookReserveSoapIn" />
+      <wsdl:output message="tns:debookReserveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="book">
+      <wsdl:input message="tns:bookSoapIn" />
+      <wsdl:output message="tns:bookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="debook">
+      <wsdl:input message="tns:debookSoapIn" />
+      <wsdl:output message="tns:debookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchbookings">
+      <wsdl:input message="tns:fetchbookingsSoapIn" />
+      <wsdl:output message="tns:fetchbookingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchReserveBookings">
+      <wsdl:input message="tns:fetchReserveBookingsSoapIn" />
+      <wsdl:output message="tns:fetchReserveBookingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOS">
+      <wsdl:input message="tns:fetchBOSSoapIn" />
+      <wsdl:output message="tns:fetchBOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSPage">
+      <wsdl:input message="tns:fetchBOSPageSoapIn" />
+      <wsdl:output message="tns:fetchBOSPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGid">
+      <wsdl:input message="tns:fetchBOSGidSoapIn" />
+      <wsdl:output message="tns:fetchBOSGidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGidPage">
+      <wsdl:input message="tns:fetchBOSGidPageSoapIn" />
+      <wsdl:output message="tns:fetchBOSGidPageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MobileServicesSoap" type="tns:MobileServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="version">
+      <soap:operation soapAction="http://tempuri.org/version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="process">
+      <soap:operation soapAction="http://tempuri.org/process" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processUnsafe">
+      <soap:operation soapAction="http://tempuri.org/processUnsafe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookReserve">
+      <soap:operation soapAction="http://tempuri.org/bookReserve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="debookReserve">
+      <soap:operation soapAction="http://tempuri.org/debookReserve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="book">
+      <soap:operation soapAction="http://tempuri.org/book" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="debook">
+      <soap:operation soapAction="http://tempuri.org/debook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchbookings">
+      <soap:operation soapAction="http://tempuri.org/fetchbookings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchReserveBookings">
+      <soap:operation soapAction="http://tempuri.org/fetchReserveBookings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOS">
+      <soap:operation soapAction="http://tempuri.org/fetchBOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSPage">
+      <soap:operation soapAction="http://tempuri.org/fetchBOSPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGid">
+      <soap:operation soapAction="http://tempuri.org/fetchBOSGid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGidPage">
+      <soap:operation soapAction="http://tempuri.org/fetchBOSGidPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MobileServicesSoap12" type="tns:MobileServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="version">
+      <soap12:operation soapAction="http://tempuri.org/version" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="process">
+      <soap12:operation soapAction="http://tempuri.org/process" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processUnsafe">
+      <soap12:operation soapAction="http://tempuri.org/processUnsafe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap12:operation soapAction="http://tempuri.org/login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookReserve">
+      <soap12:operation soapAction="http://tempuri.org/bookReserve" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="debookReserve">
+      <soap12:operation soapAction="http://tempuri.org/debookReserve" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="book">
+      <soap12:operation soapAction="http://tempuri.org/book" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="debook">
+      <soap12:operation soapAction="http://tempuri.org/debook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchbookings">
+      <soap12:operation soapAction="http://tempuri.org/fetchbookings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchReserveBookings">
+      <soap12:operation soapAction="http://tempuri.org/fetchReserveBookings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOS">
+      <soap12:operation soapAction="http://tempuri.org/fetchBOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSPage">
+      <soap12:operation soapAction="http://tempuri.org/fetchBOSPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGid">
+      <soap12:operation soapAction="http://tempuri.org/fetchBOSGid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBOSGidPage">
+      <soap12:operation soapAction="http://tempuri.org/fetchBOSGidPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MobileServices">
+    <wsdl:port name="MobileServicesSoap" binding="tns:MobileServicesSoap">
+      <soap:address location="http://riks.pastell16.pastelldata.se/v3476/MobileServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MobileServicesSoap12" binding="tns:MobileServicesSoap12">
+      <soap12:address location="http://riks.pastell16.pastelldata.se/v3476/MobileServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
