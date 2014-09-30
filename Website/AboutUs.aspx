@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container">
+    <div class="container about_us_container">
     
 
         <% if (Request.QueryString["facilityId"] != null) { %>
@@ -19,7 +19,7 @@
             <div class="line" />
             <div class="spacer" />
 
-            <div class="text-normal text-gray">
+            <div class="text-normal text-gray about_us_text">
                 <%= AboutUsText %>
             </div>
 

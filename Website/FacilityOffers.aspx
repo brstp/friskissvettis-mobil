@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container">
+    <div class="container facilitty_offers_container">
         <%= FacilityOffersText %>
     </div>
 

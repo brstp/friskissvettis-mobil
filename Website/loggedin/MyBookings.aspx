@@ -14,10 +14,8 @@
     <div class="container">
 
         <h1 class="booking"><%= Resources.LocalizedText.MyBookings %></h1>
-        <div class="spacer">&nbsp;</div>
 
         <div class="line" />
-        <div class="spacer">&nbsp;</div>
         <a href="/Schedule.aspx" class="no-decoration">
             <div class="button button-red booking">
                 <%= Resources.LocalizedText.NewBooking %>

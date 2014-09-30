@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container">
+    <div class="container facility_info_container">
     
         <h1><%= Facility.Name %></h1>
         

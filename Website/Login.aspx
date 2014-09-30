@@ -21,7 +21,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
-    <div class="container">
+    <div class="container login_text_container">
         <h1><%= Resources.LocalizedText.Login %></h1>
     </div>
 
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container login_buttons">
 
         <asp:LinkButton runat="server" ID="btnLogin" OnClick="btnLogin_Click" CssClass="no-decoration btnLogin" >
             <div class="button button-red button-login">

@@ -12,7 +12,7 @@
         <div class="line" />
         <div class="spacer" />
 
-        <div class="text-normal text-gray">
+        <div class="text-normal text-gray become_member_text">
             <%= Resources.LocalizedText.BecomeMemberBody %>
         </div>
 

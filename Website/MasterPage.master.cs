@@ -102,18 +102,18 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             if (FriskisService.IsLoggedIn)
             {
-                return @"<a href=""/Logout.aspx"" alt=""Start""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Logout + @""" class=""icon"" src=""/images/master/icons/logout-" + lang + @".png"" /></a>";
+                return @"<a href=""/Logout.aspx"" alt=""Start"" class=""logout_link""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Logout + @""" class=""icon"" src=""/images/master/icons/logout-" + lang + @".png"" /></a>";
             }
             else
             {
                 string facilityId = ContextHelper.GetValue<string>("facilityId", "");
                 if (string.IsNullOrEmpty(facilityId))
                 {
-                    return @"<a href=""/Login.aspx"" alt=""Start""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Login + @""" class=""icon"" src=""/images/master/icons/login-" + lang + @".png"" /></a>";
+                    return @"<a href=""/Login.aspx"" alt=""Start"" class=""login_link""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Login + @""" class=""icon"" src=""/images/master/icons/login-" + lang + @".png"" /></a>";
                 }
                 else
                 {
-                    return @"<a href=""/Login.aspx?facilityId=" + facilityId + @""" alt=""Start""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Login + @""" class=""icon"" src=""/images/master/icons/login-" + lang + @".png"" /></a>";
+                    return @"<a href=""/Login.aspx?facilityId=" + facilityId + @""" alt=""Start"" class=""login_link""><img id=""icon-login"" alt=""" + Resources.LocalizedText.Login + @""" class=""icon"" src=""/images/master/icons/login-" + lang + @".png"" /></a>";
                 }
                 
             }
@@ -153,11 +153,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             if (FriskisService.LoggedInMember != null)
             {
-                return @"<a href=""" + HomeAhref + @""" alt=""Start""><img id=""icon-logo"" alt=""Friskis & Svettis"" class=""icon"" src=""/images/master/icons/logo.png"" /></a>";
+                return @"<a href=""" + HomeAhref + @""" alt=""Start"" class=""home_link""><img id=""icon-logo"" alt=""Friskis & Svettis"" class=""icon"" src=""/images/master/icons/logo.png"" /></a>";
             }
             else
             {
-                return @"<a href=""/"" alt=""Start""><img id=""icon-logo"" alt=""Friskis & Svettis"" class=""icon"" src=""/images/master/icons/logo.png"" /></a>";
+                return @"<a href=""/"" alt=""Start"" class=""home_link""><img id=""icon-logo"" alt=""Friskis & Svettis"" class=""icon"" src=""/images/master/icons/logo.png"" /></a>";
             }
 
             
@@ -203,7 +203,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
             }
 
-            return @"<a href=""" + link + @""" alt=""""><img id=""icon-about"" alt=""" + alt + @""" class=""icon"" src=""/images/master/icons/" + linkImage + "-" + lang + @".png"" /></a>";
+            return @"<a href=""" + link + @""" alt="""" class=""about_link""><img id=""icon-about"" alt=""" + alt + @""" class=""icon"" src=""/images/master/icons/" + linkImage + "-" + lang + @".png"" /></a>";
         }
     }
 
@@ -211,7 +211,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         get
         {
-            return @"<img src=""/images/button/back-" + lang + @".png"" />";
+            return @"<img src=""/images/button/back-" + lang + @".png"" class=""back_image"" />";
         }
     }
 
@@ -219,7 +219,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         get
         {
-            return "<a href=\"" + HomeAhref + "\" id=\"btnHome\" class=\"no-decoration\">" +
+            return "<a href=\"" + HomeAhref + "\" id=\"btnHome\" class=\"no-decoration home_image_link\" >" +
                         "<img src=\"/images/button/home-" + lang + ".png\" />" +
                    "</a>";
         }
@@ -252,7 +252,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
                 {
                     string link = "/AboutUs.aspx?" + ((FriskisService.IsLoggedIn && FriskisService.IsApp) ? "authenticated=true&" : "") + "facilityId=" + facility.LocalId;
 
-                    return "<a href=\"" + link + "\" id=\"btnAboutUs\" class=\"no-decoration\">" +
+                    return "<a href=\"" + link + "\" id=\"btnAboutUs\" class=\"no-decoration about_small_image_link\" >" +
                                 "<img src=\"/images/button/about-" + lang + ".png\" />" +
                            "</a>";
                 }
@@ -305,7 +305,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
                 link += "http://www.facebook.com/FriskisSvettisRiks";
             }
 
-            return link + "\"><img id=\"footer-icons-facebook\" src=\"/images/master/footer-facebook.png\" /></a>";
+            return link + "\" class=\"facebook_link\"><img id=\"footer-icons-facebook\" src=\"/images/master/footer-facebook.png\" /></a>";
         }
     }
 
@@ -313,7 +313,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         get
         {
-            string link = "<a target=\"_blank\" href=\"";
+            string link = "<a class=\"twitter_link\" target=\"_blank\" href=\"";
 
             if (CurrentFacility != null)
             {

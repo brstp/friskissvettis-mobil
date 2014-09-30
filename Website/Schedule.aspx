@@ -26,7 +26,7 @@
         
     </div>
 
-    <div runat="server" id="divContainer" class="container">
+    <div runat="server" id="divContainer" class="container container_schedule">
 
         <div runat="server" id="divSuceessMessage" visible="false" class="container container-success">
             <asp:Label runat="server" ID="lblSuccessMessage"></asp:Label>
@@ -35,8 +35,6 @@
         <h1 class="schedule"><%= Resources.LocalizedText.Schedule %></h1>
 
         <div class="line" />
-
-        <div class="spacer">&nbsp;</div>
         
         <div class="schedule">
 

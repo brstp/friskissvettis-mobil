@@ -50,6 +50,8 @@ public class FriskisService
         {
             get
             {
+                //return true; // debug
+
                 List<string> clients = new List<string>() { "android", "iphone", "wp" };
 
                 // check if accepted client type
