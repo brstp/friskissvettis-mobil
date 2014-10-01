@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -8,14 +8,15 @@
 
     <meta name="format-detection" content="telephone=no">
 
-    <meta name="viewport" content="width=device-width, height=device-height" />
+   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; target-densityDpi=device-dpi" />
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
     <!--<script src="/js/oneClickButton.jquery.plugin.js"></script>-->
     <script src="/js/spin.min.js"></script>
 
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" momasdk="false" />
+    <link href="css/responsive.css?v=3" rel="stylesheet" type="text/css" momasdk="false" />
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -45,6 +46,8 @@
 
 <body>
 	
+	<div id="reponsive_hack_width"></div>
+	<div id="reponsive_hack_height"></div>
 	
 	<% if (MoMA.Mobile.Device.DeviceInfo.CurrentDevice.IsAndroid) { %>
 		<link href="css/common-android.css" rel="stylesheet" type="text/css" />
@@ -94,13 +97,11 @@
 			
 			<div id="footer">
 				<div class="footer_inner">
-				
 					<a target="_blank" class="homepage_link" href="<%= HomepageLink %>"><%= Resources.LocalizedText.VisitNormalWebsite %></a>
 					<div id="footer-icons">
 						<%= TwitterLink %>
 						<%= FacebookLink %>
 					</div>
-				
 				</div>
 			</div>
 			
@@ -108,5 +109,35 @@
 	
 	</form>
 	
+	
+	<script language="javascript">
+	
+		function set_faux_media_query() {
+		
+			windowWidth = parseInt(jQuery('#reponsive_hack_width').css('width').replace('px',''));
+			windowHeight = parseInt(jQuery('#reponsive_hack_height').css('height').replace('px',''));
+			
+			if ( windowWidth >= 321 ) jQuery('body').addClass('rw321');
+			if ( windowWidth >= 768 ) jQuery('body').addClass('rw768');
+			if ( windowWidth >= 992 ) jQuery('body').addClass('rw992');
+			if ( windowWidth >= 1200 ) jQuery('body').addClass('rw1200');
+			
+			if ( windowHeight >= 321 ) jQuery('body').addClass('rh321');
+			if ( windowHeight >= 768 ) jQuery('body').addClass('rh768');
+			if ( windowHeight >= 992 ) jQuery('body').addClass('rh992');
+			if ( windowHeight >= 1200 ) jQuery('body').addClass('rh1200');
+			
+			//jQuery('.footer_inner').html('w:' + windowWidth + ', h:' + windowHeight + ' (' + jQuery('body').attr('class') + ')' );
+			
+		};
+		
+		jQuery(document).ready(function(){ set_faux_media_query(); });
+		jQuery(window).resize(function() { 
+			jQuery('body').attr('class', '');
+			set_faux_media_query(); 
+		});
+	
+	</script>
+
 </body>
 </html>

@@ -74,17 +74,20 @@
 	
 		   <a href="ChooseLanguage.aspx" class="no-decoration" style="display: block">
 			  <div class="button button-gray-half">
-				 Choose language
+				 Choose language.
 				 <img src="images/button/button-grey-arrow.png" />
 			  </div>
 		   </a>
 	
 		   <div class="clear" />
-	
+	    	<script language="javascript">
+			//document.write(navigator.userAgent);
+		</script>
 	    </div>
 	</div>
 
     <!-- <%= HttpContext.Current.Request.Url.ToString() %> -->
+
 
 </asp:Content>
 
