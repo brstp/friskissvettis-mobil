@@ -57,9 +57,13 @@ img.loader 					{ display: none; }
 	
 .home_bar 					{ width: 100%; background-color: #f8f8f8; }
 
-.home_bar > a					{ display: block; width: 33%; float: left; text-align: center; }
+.home_bar .homelink 			{ display: block; width: 33%; float: left; text-align: left; }
 
-.home_bar > a img				{ height: 80px; width: auto; }
+.home_bar .bookingsaboutlink 		{ display: block; width: 33%; float: left; text-align: center; }
+
+.home_bar .loginlink 			{ display: block; width: 33%; float: left; text-align: right; }
+
+.home_bar a img				{ height: 80px; width: auto; }
 
 
 /************************************************
@@ -174,7 +178,7 @@ div.spacer 					{ height: 16px; }
   INPUT 
  ************************************************/
 
-select 						{ background-color: white; background: url("/images/select/background-29.png") no-repeat scroll right top white; border: 2px solid #4c4c4c; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; font-size: 20px; line-height: 32px; padding-left: 3px; height: 33px; width: 100%; -moz-appearance: none; -webkit-appearance: none; appearance: none; }
+select 						{ background-color: white; background: url("/images/select/background-29.png") no-repeat scroll right top white; border: 2px solid #4c4c4c; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; font-size: 20px; padding-left: 3px; height: 33px; width: 100%; -moz-appearance: none; -webkit-appearance: none; appearance: none; }
 
 input.text 					{ padding: 10px 8px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: none; font-size: 16px; }
 
@@ -236,8 +240,8 @@ input.text 					{ padding: 10px 8px; -moz-border-radius: 6px; -webkit-border-rad
 .rw768 .home_bar,
 .rh768 .home_bar					{ border-bottom: 1px solid #ddd; }
 
-.rw768 .home_bar > a img,
-.rh768 .home_bar > a img				{ height: 100px; }
+.rw768 .home_bar a img,
+.rh768 .home_bar a img				{ height: 100px; }
 
 .rw768 .button,
 .rh768 .button						{ font-size: 18px; }
@@ -384,7 +388,7 @@ input.text 					{ padding: 10px 8px; -moz-border-radius: 6px; -webkit-border-rad
 
 .rw768.rh992 .text-normal 			{ font-size: 28px; }
 
-.rw768.rh992 .home_bar > a img		{ height: 120px; }
+.rw768.rh992 .home_bar a img			{ height: 120px; }
 
 .rw768.rh992 .fadein 				{ }
 
@@ -443,31 +447,31 @@ input.text 					{ padding: 10px 8px; -moz-border-radius: 6px; -webkit-border-rad
 
 .rw768.rh1200 .container-loggedin,
 
-.rw768.rh1200 input.text				{ font-size: 34px; }
+.rw768.rh1200 input.text,
 
-.rw768.rh1200 .home_bar > a img		{ height: 147px; }
+.rw768.rh1200 .text-normal			{ font-size: 50px; }
+
+.rw768.rh1200 .home_bar a img			{ height: 190px; }
 
 .rw768.rh1200 .fadein 				{ }
 
-.rw768.rh1200 .button 				{ font-size: 40px; padding: 16px 16px; }
+.rw768.rh1200 .button 				{ font-size: 50px; padding: 20px 20px; margin-bottom: 10px; }
 
-.rw768.rh1200 .button img				{ width: 40px; }
+.rw768.rh1200 .button img			{ width: 50px; }
 
-.rw768.rh1200 #btnBack img 			{ height: 57px; margin-top: 13px; }
+.rw768.rh1200 #btnBack img 			{ height: 80px; margin-top: 13px; margin-left: 30px; }
 
-.rw768.rh1200 #btnHome img 			{ height: 57px; margin-top: 10px; }
+.rw768.rh1200 #btnHome img 			{ height: 80px; margin-top: 10px; margin-right: 30px; }
 
-.rw768.rh1200 #btnAboutUs img			{ height: 57px; margin-top: 10px; }
+.rw768.rh1200 #btnAboutUs img			{ height: 80px; margin-top: 10px; }
 
-.rw768.rh1200 select 				{ font-size: 40px; height: 75px; background: url("/images/select/background-xlarge.png") no-repeat scroll right top white; }
+.rw768.rh1200 select 				{ font-size: 40px; height: 75px; background: url("/images/select/background-xlarge.png") no-repeat scroll right top white; padding-left: 20px;  }
 
-.rw768.rh1200 .text-normal 			{ font-size: 34px; }
-
-.rw768.rh1200 h1					{ font-size: 60px; margin-top: 30px; }
+.rw768.rh1200 h1					{ font-size: 70px; margin-top: 30px; }
 
 .rw768.rh1200 #footer 				{ height: 75px; font-size: 35px; }
 
-.rw768.rh1200 #footer .homepage_link 	{ font-size: 30px; line-height: 30px; top: 0px; }
+.rw768.rh1200 #footer .homepage_link 	{ font-size: 40px; line-height: 40px; top: 3px; }
 
 .rw768.rh1200 #footer-icons 			{ width: 168px; top: 7px; }
 
@@ -479,7 +483,7 @@ input.text 					{ padding: 10px 8px; -moz-border-radius: 6px; -webkit-border-rad
 
 .rw768.rh1200 .container-loggedin		{ padding: 10px 16px; }
 
-.rw768.rh1200 .container-header 		{ height: 80px; }
+.rw768.rh1200 .container-header 		{ height: 100px; }
 
 .rw768.rh1200 input.text 			{ padding: 26px 20px; width: 600px; }
 

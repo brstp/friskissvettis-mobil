@@ -71,7 +71,7 @@
 			<% } %>
 			
 			<div class="home_bar">
-				<%= HomeLink %><%= BookingsAboutLink%><%= LoginLink %> 
+				<div class="homelink"><%= HomeLink %></div><div class="bookingsaboutlink"><%= BookingsAboutLink%></div><div class="loginlink"><%= LoginLink %></div>
 				<div class="clear"></div>
 			</div>
 			
