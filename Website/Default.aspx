@@ -42,7 +42,7 @@
 	
 		   <%--<asp:DropDownList runat="server" ID="drpFacility"></asp:DropDownList>--%>
 	
-		   <div class="spacer">&nbsp;</div>
+		   <!--<div class="spacer">&nbsp;</div>-->
 	
 	<%--        <asp:LinkButton runat="server" ID="btnSelect" OnClick="btnSelect_Click">--%>
 		   <a href="#" id="btnSelect">

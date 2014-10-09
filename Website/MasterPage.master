@@ -8,7 +8,7 @@
 
     <meta name="format-detection" content="telephone=no">
 
-   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; target-densityDpi=device-dpi" />
+   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, target-densityDpi=device-dpi" />
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -20,8 +20,6 @@
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    
-    <link href="css/common-nosdk.css" rel="stylesheet" type="text/css" />
 
     <!-- Book/Unbook loader -->
     <style type="text/css">
@@ -48,14 +46,6 @@
 	
 	<div id="reponsive_hack_width"></div>
 	<div id="reponsive_hack_height"></div>
-	
-	<% if (MoMA.Mobile.Device.DeviceInfo.CurrentDevice.IsAndroid) { %>
-		<link href="css/common-android.css" rel="stylesheet" type="text/css" />
-	<% } %>
-	
-	<% if (MoMA.Mobile.Device.DeviceInfo.CurrentDevice.IsWindows) { %>
-		<link href="css/common-windows.css" rel="stylesheet" type="text/css" />
-	<% } %>
 	
 	<form id="form1" runat="server">
 	
