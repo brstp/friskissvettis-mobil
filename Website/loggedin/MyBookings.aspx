@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MyBookings.aspx.cs" Inherits="loggedin_MyBookings" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/common-schedule-item.css" rel="stylesheet" type="text/css" momasdk="true" />
-    <link href="../css/mybookings.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <!--<link href="../css/common-schedule-item.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <link href="../css/mybookings.css" rel="stylesheet" type="text/css" momasdk="true" />-->
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

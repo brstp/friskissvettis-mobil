@@ -288,6 +288,7 @@ public partial class Schedule : MobilePage
             ClientTarget = "uplevel";
 
             Title = Resources.LocalizedText.PageTitleSchedule;
+            this.AutoAddMobileMetaTags = false;
 
             if (!Page.IsPostBack)
             {

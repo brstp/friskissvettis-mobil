@@ -26,5 +26,6 @@ public partial class FacilityNews : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleNews;
+        this.AutoAddMobileMetaTags = false;
     }
 }

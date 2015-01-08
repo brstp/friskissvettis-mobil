@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
-    <link href="css/common-schedule-item.css" rel="stylesheet" type="text/css" momasdk="true" />
-    <link href="css/schedule.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <!--<link href="css/common-schedule-item.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <link href="css/schedule.css" rel="stylesheet" type="text/css" momasdk="true" />-->
     
     <!-- load activity selects from handler via ajax instead of postback -->
     <script type="text/javascript">
@@ -91,7 +91,7 @@
         </div>
     </div>
     
-    <div runat="server" id="divScheduleItems" class="container container-dark">
+    <div runat="server" id="divScheduleItems" class="container container-dark extra-bottom-padding">
 
         <div runat="server" class="text-normal text-white" id="divNoPass" visible="false">
             <%= Resources.LocalizedText.NoActivitiesCouldBeFound %>

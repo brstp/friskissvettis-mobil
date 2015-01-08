@@ -12,5 +12,6 @@ public partial class FacilityMap : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleMap;
+        this.AutoAddMobileMetaTags = false;
     }
 }

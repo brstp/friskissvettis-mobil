@@ -78,6 +78,8 @@ public partial class loggedin_ConfirmUnbooking : MobilePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+    
+    	this.AutoAddMobileMetaTags = false;
         // instant unbook (no need to confirm anymore because of changes)
         btnUnbook_OnClick(null, new EventArgs());
         return;

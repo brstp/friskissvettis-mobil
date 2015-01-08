@@ -143,6 +143,7 @@ public partial class _Default : MobilePage
     {
         // hide toolbar
         ((MasterPage)this.Master).UseToolbar = false;
+        this.AutoAddMobileMetaTags = false;
 
         base.OnPreRender(e);
     }

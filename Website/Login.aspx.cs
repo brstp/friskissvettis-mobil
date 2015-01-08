@@ -83,6 +83,7 @@ public partial class Login : MobilePage
         ClientTarget = "uplevel";
 
         Title = Resources.LocalizedText.PageTitleLogin;
+        this.AutoAddMobileMetaTags = false;
 
         // txtUsername.Attributes.Add("placeholder", Resources.LocalizedText.Username);
         // txtPassword.Attributes.Add("placeholder", Resources.LocalizedText.Password);

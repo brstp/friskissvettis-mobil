@@ -28,7 +28,7 @@ public partial class AboutUs : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleAboutUs;
-
+        this.AutoAddMobileMetaTags = false;
 
     }
 }

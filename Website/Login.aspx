@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="css/login.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <!--<link href="css/login.css" rel="stylesheet" type="text/css" momasdk="true" />-->
 
     <script type="text/javascript">
 

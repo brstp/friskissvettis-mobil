@@ -8,8 +8,8 @@
 
     <meta name="format-detection" content="telephone=no">
 
-   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, target-densityDpi=device-dpi" />
-
+    <meta name="viewport" content="width=320, user-scalable=0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
@@ -44,8 +44,8 @@
 
 <body>
 	
-	<div id="reponsive_hack_width"></div>
-	<div id="reponsive_hack_height"></div>
+	<!--<div id="reponsive_hack_width"></div>
+	<div id="reponsive_hack_height"></div>-->
 	
 	<form id="form1" runat="server">
 	
@@ -102,7 +102,7 @@
 	
 	<script language="javascript">
 	
-		function set_faux_media_query() {
+		/*function set_faux_media_query() {
 		
 			windowWidth = parseInt(jQuery('#reponsive_hack_width').css('width').replace('px',''));
 			windowHeight = parseInt(jQuery('#reponsive_hack_height').css('height').replace('px',''));
@@ -125,7 +125,7 @@
 		jQuery(window).resize(function() { 
 			jQuery('body').attr('class', '');
 			set_faux_media_query(); 
-		});
+		});*/	
 	
 	</script>
 	

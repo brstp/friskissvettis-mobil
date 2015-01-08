@@ -58,5 +58,6 @@ public partial class FacilityInfo : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleFacilityInfo;
+        this.AutoAddMobileMetaTags = false;
     }
 }

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="FacilityInfo.aspx.cs" Inherits="FacilityInfo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="css/facilityinfo.css" rel="stylesheet" type="text/css" momasdk="true" />
+    <!--<link href="css/facilityinfo.css" rel="stylesheet" type="text/css" momasdk="true" />-->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

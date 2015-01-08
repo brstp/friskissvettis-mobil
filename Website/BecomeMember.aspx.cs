@@ -34,5 +34,6 @@ public partial class BecomeMember : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleBecomeMember;
+        this.AutoAddMobileMetaTags = false;
     }
 }

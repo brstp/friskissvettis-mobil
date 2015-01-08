@@ -41,6 +41,8 @@ public partial class loggedin_MyBookings : MobilePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+    	this.AutoAddMobileMetaTags = false;
+    	
         // iphone-fix to keep __doPostback()
         // http://stackoverflow.com/questions/7275695/uiwebview-and-iphone-content-does-not-postback-asp-net-browser-capability-issue
         ClientTarget = "uplevel";

@@ -31,6 +31,9 @@
         <img class="slideshow" src="/images/start/slide2-<%= lang %>.jpg">
         <img class="slideshow" src="/images/start/slide3-<%= lang %>.jpg">
     </div>
+</asp:Content>
+
+<asp:Content ID="ContentExtra" ContentPlaceHolderID="ContentPlaceHolderExtra" Runat="Server">
 
     <div class="start_container">
 	    <div class="container">
@@ -88,6 +91,4 @@
 
     <!-- <%= HttpContext.Current.Request.Url.ToString() %> -->
 
-
 </asp:Content>
-

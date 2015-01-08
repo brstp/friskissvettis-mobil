@@ -75,6 +75,7 @@ public partial class loggedin_BookingDone : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleBookingDone;
+        this.AutoAddMobileMetaTags = false;
     }
 
     public string GetName(ScheduleItem item)

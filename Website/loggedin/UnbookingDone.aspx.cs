@@ -56,6 +56,7 @@ public partial class loggedin_UnbookingDone : MobilePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+    	this.AutoAddMobileMetaTags = false;
         string mode = ContextHelper.GetValue<string>("mode", "html");
         if (!mode.Equals("css"))
         {

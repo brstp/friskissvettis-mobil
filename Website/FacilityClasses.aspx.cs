@@ -26,5 +26,6 @@ public partial class FacilityClasses : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleOffers;
+        this.AutoAddMobileMetaTags = false;
     }
 }

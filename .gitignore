@@ -1,0 +1,8 @@
+
+Friskis och Svettis.sln
+
+*.cache
+
+*.sln
+
+Libraries/FriskisSvettisLib/obj/Debug/FriskisSvettisLib.csprojResolveAssemblyReference.cache

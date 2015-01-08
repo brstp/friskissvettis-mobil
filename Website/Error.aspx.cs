@@ -11,5 +11,6 @@ public partial class Error : MobilePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Title = Resources.LocalizedText.PageTitleError;
+        this.AutoAddMobileMetaTags = false;
     }
 }

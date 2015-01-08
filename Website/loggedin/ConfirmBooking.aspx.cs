@@ -54,6 +54,9 @@ public partial class loggedin_ConfirmBooking : MobilePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+    
+    		this.AutoAddMobileMetaTags = false;
+    	
         // instant book (no need to confirm anymore because of changes)
         btnBook_OnClick(null, new EventArgs());
         return; 

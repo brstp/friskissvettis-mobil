@@ -16,7 +16,7 @@ public partial class ChooseLanguage : MobilePage
         // iphone-fix to keep __doPostback()
         // http://stackoverflow.com/questions/7275695/uiwebview-and-iphone-content-does-not-postback-asp-net-browser-capability-issue
         ClientTarget = "uplevel";
-
+		this.AutoAddMobileMetaTags = false;
         Title = Resources.LocalizedText.PageTitleChooseLanguage;
 
         btnSwedish.Visible = false;
