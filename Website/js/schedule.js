@@ -94,6 +94,7 @@ $(document).ready(function () {
         $toSelect.html(options);
 
         // restore selection
-        $toSelect.val(toSelectedValue);
+        //$toSelect.val(toSelectedValue);
+        $("[id$='drpTo'] option").removeAttr('selected').filter('[value=' + toSelectedValue + ']').attr('selected', true);
     }
 }); 
